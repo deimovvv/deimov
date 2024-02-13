@@ -1,0 +1,49 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+
+/* .canvas{
+    position: fixed !important;
+      inset: 0 !important;
+      height: 100vh;
+      overflow-y: hidden;
+} */
+
+.layout{
+margin: 0 auto;
+
+
+
+}
+
+.opacity{
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 100%,
+    rgba(0, 0, 0, 0.8505996148459384) 100%
+  );
+
+
+}
+
+.layoutChild{
+  width: 95%;
+margin: 0 auto;
+
+
+
+}
