@@ -11,13 +11,25 @@ import styled from "styled-components";
 import "../css/style.css";
 import ProjectsDetail from "../pages/ProjectsDetail";
 import getProjectByid from "../helpers/getProjectByid";
+import Presskit from "../pages/Presskit";
 
 const Content = styled.section`
-min-height: 502px;
+
 
 
 
 `
+
+const Main = styled.main`
+  flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+`;
+
+const Layout = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
 
 
 const DeimovRouter = () => {
@@ -43,12 +55,14 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
     <div className={`layout ${shouldApplyOpacity ? 'opacity' : ''}`}>
         <div className="layoutChild" >
 
-    {/* Header y Navegacion */}
+        <Layout>  
+    {/* Header y Navegacion  */}
     <HeaderNav />
     <Experience/> 
   
      
      {/* Contenido central */}
+     <Main>
      <Content>
 
       <Routes>
@@ -56,14 +70,17 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
         <Route path="/projects" element={<Projects />} />
         <Route exact path="/about" element={<About/>} />
         <Route path="/music" element={<Music />} />
+        <Route path="/presskit" element={<Presskit/>} />
         <Route path="/project/:id" element={<ProjectsDetail />} />
 
       </Routes>
 
       </Content>
+      </Main>
 
       {/* Footer */}
       <Footer/>
+      </Layout>
       </div>
     </div>
   );

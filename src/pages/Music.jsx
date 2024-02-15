@@ -16,7 +16,7 @@ const Title = styled.h3`
 color: whitesmoke;
 text-align: center;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-font-size: 1.5rem;
+font-size: 1.1rem;
 
 `
 

@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 
 const Title = styled.span`
-  color: white;
+  color: #c5c5c5;
+  
 
   font-size: 2.5rem;
   position: relative;

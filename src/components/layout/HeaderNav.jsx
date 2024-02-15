@@ -51,7 +51,7 @@ const HeaderNav = () => {
       <Logo>
         <h2>
           {" "}
-          <Link to="/"> Logo </Link>{" "}
+          <Link to="/"> Deimov </Link>{" "}
         </h2>
       </Logo>
 
@@ -66,6 +66,12 @@ const HeaderNav = () => {
             {" "}
             <Link to="/music">Music</Link>{" "}
           </Li>
+
+          <Li>
+            {" "}
+            <Link to="/presskit">Presskit</Link>{" "}
+          </Li>
+
 
           <Li>
             {" "}
