@@ -8,10 +8,11 @@
         'date': '2023',
         'client': 'Coevo',
          'technologies': 'React & React Three Fiber',
-         'category': 'Web',
-         'title': 'Website for Company',
+         'category': 'VR',
+         'title': 'Virtual Reality for Party',
          'role': 'Freelancer',
-         'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).`
+         'description': `Virtual Reality Experience we made for party.`,
+         'video': 'https://www.youtube.com/watch?v=f3XfhRqPN7I'
     },
     {
         'id': 'evolvara',
@@ -19,10 +20,12 @@
         'date': '2023',
         'client': 'Coevo',
          'technologies': 'React & React Three Fiber',
-         'category': 'Web',
-         'title': 'Website for Company',
+         'category': '3D & Environment',
+         'title': 'Environment & Character',
          'role': 'Freelancer',
-         'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).`
+         'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).`,
+         'video': 'https://www.youtube.com/watch?v=Dt0Ucp6wbUk'
+         
     },
     
     {
@@ -46,7 +49,9 @@
          'category': '3D & Environment',
          'title': 'Experimentation with Procedural Content Generation',
          'role': 'Freelancer',
-         'description': 'Experimentation with Procedural Content Generation'
+         'description': 'Experimentation with Procedural Content Generation',
+         'video': 'https://www.youtube.com/watch?v=T0IFN-n-8ps',
+
     },
 
     {
@@ -58,7 +63,11 @@
          'category': 'VR',
          'title': 'Virtual Reality Experience for Party',
          'role': 'Company',
-         'description': 'Virtual Reality Experience for Party'
+         'description': 'Virtual Reality for Party',
+         'video': 'https://www.youtube.com/watch?v=pUe8FA5ncso',
+         'image': '/assets/Roterton1.jpg',
+         'image2': '/assets/roterton2.jpg'
+
     },
 
     {
@@ -67,10 +76,12 @@
          'date': '2022',
          'client': 'Deimov',
          'technologies': 'Stable Diffusion & Touch Designer',
-         'category': 'Media',
-         'title': 'Experimentation',
+         'category': '3D & Environment',
+         'title': 'Landscape',
          'role': 'Freelancer',
-         'description': ''
+         'description': '',
+         'video': 'https://www.youtube.com/watch?v=iHV8JBfzrTg'
+
     },
 
     

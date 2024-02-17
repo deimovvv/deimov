@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import LoaderDeimov from "./layout/LoaderDeimov";
 
 
 const Title = styled.span`
@@ -20,11 +21,19 @@ const TitleContainer = styled.div`
 `;
 
 const home = () => {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 1000); // Simula el tiempo de carga de la página
+  }, []);
+
+
   return (
-    <>
-      <TitleContainer>
-        <Title>Welcome to Deimov Ecosystem</Title>
-      </TitleContainer>
+    <>{ isLoading ?  <LoaderDeimov /> :  <TitleContainer>
+      <Title>Welcome to Deimov Ecosystem</Title>
+    </TitleContainer>}
+     
     </>
   );
 };

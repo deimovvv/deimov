@@ -58,7 +58,7 @@ const H3 = styled.h3`
 
 const ProjectCard = ({ id,  description, title }) => {
 
-  const projectURL = `/src/assets/${id}.jpg`;
+  const projectURL = `/assets/${id}.jpg`;
 
 
   return (

@@ -59,7 +59,7 @@ const HeaderNav = () => {
         <Ul>
           <Li>
             {" "}
-            <Link to="/projects"> Portfolio </Link>{" "}
+            <Link to="/projects"> Projects </Link>{" "}
           </Li>
 
           <Li>
@@ -70,6 +70,11 @@ const HeaderNav = () => {
           <Li>
             {" "}
             <Link to="/presskit">Presskit</Link>{" "}
+          </Li>
+
+          <Li>
+            {" "}
+            <Link to="/presskit">Shop</Link>{" "}
           </Li>
 
 
