@@ -41,7 +41,7 @@ const Contact = () => {
                 <IMG src="/public/icons8-linkedin-24.png" alt="" />
               </a>
               <a href='https://www.instagram.com/deimovvv/' target="_blank">
-                <IMG src="/public/icons8-instagram-24.png" alt="" />
+                <IMG src="/assets/deimovAI.jpg" alt="" />
               </a>
               </MediaContainer>
               

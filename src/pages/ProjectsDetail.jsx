@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams,  useNavigate } from "react-router-dom";
 import getProjectByid from "../helpers/getProjectByid";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
@@ -103,15 +103,78 @@ const IMG2 = styled.img`
 const SectionVideo = styled.section`
   margin-top: 80px;
   margin-bottom: 30px;
-  max-width: 1220px;
+  max-width: 1200px;
   width: 100%;
 `;
+
+const Back = styled.div`
+display:flex;
+justify-content:flex-end;
+align-items:flex-end;
+flex-direction:column;
+margin-top: 20px;
+cursor: pointer;
+
+@media screen and (max-width: 30em) {
+
+justify-content:center;
+align-items: center;
+  
+
+}
+
+
+.flecha{
+  display: flex;
+  justify-items:flex-end;
+  align-self: flex-end;
+  margin-top: 5px;
+
+
+}
+
+
+`
+
+const ButtonBack = styled.button`
+font-family: "Syncopate", sans-serif;
+display:flex;
+justify-content:flex-end;
+background-color: transparent;
+border: none;
+color: whitesmoke;
+cursor: pointer;
+margin-top: 5px;
+font-size: 12px;
+
+
+:hover{
+color: #cfcdcd;
+
+}
+
+@media screen and (max-width: 30em) {
+margin-top: 18px;
+  left: 87%;
+  font-size: 14px;
+
+}
+
+
+`
 
 const ProjectsDetail = () => {
   const { id } = useParams();
 
+  const navigate = useNavigate();
+
   const project = getProjectByid(id);
   const projectURL = `/assets/${project.id}.jpg`;
+
+  const handleBack = () => {
+    navigate(-1); // Navega hacia atrás
+  };
+
 
   return (
     <SectionMain>
@@ -166,6 +229,19 @@ const ProjectsDetail = () => {
             width="100%"
             height="500px"
           />
+            <Back onClick={handleBack}>
+           
+           <box-icon
+             className="flecha"
+             animation="flashing"
+             name="left-arrow-alt"
+             flip="vertical"
+             color="#ffffff"
+           ></box-icon>
+
+            <ButtonBack > BACK </ButtonBack>
+
+           </Back>
         </SectionVideo>
       ) : null}
     </SectionMain>

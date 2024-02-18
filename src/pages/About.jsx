@@ -14,7 +14,7 @@ const Section = styled.section`
 
 const Image = styled.img`
   width: 400px;
-  height: 400px;
+  height: 500px;
   transition: 0.5s;
   object-fit: cover;
 
@@ -43,7 +43,7 @@ const about = () => {
   return (
     <>
       <Section id="about-section">
-        <Image src="/public/deimov.jpg"></Image>
+        <Image src="/assets/deimovAI.jpg"></Image>
 
         <Description>
           <H2>//</H2>

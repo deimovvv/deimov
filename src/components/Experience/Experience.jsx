@@ -20,7 +20,8 @@ const background = () => {
   return (
     <Container>
       <Canvas id="canvas" className="canvas" camera={{ position: [0, 0, 6] }}>
-        {/*  { <OrbitControls/>   } */}
+      <OrbitControls updateDefaultCamera={true} enableZoom={true} />
+  
 
         <directionalLight position={[1, 2, 3]} intensity={1.5} />
         <ambientLight intensity={0.5} />
