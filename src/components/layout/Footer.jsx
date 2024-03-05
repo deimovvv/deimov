@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
 const FooterDiv = styled.footer`
@@ -22,7 +23,13 @@ margin-top: 5px;
 const Footer = () => {
   return (
     <FooterDiv> 
-        <h4 className="copy">  &copy; Deimov </h4>
+        <h2 className="copy">  &copy;  
+          {" "}
+          <Link to="/copy"> Deimov </Link>{" "}
+          </h2>
+    
+
+
        
           </FooterDiv>
   )

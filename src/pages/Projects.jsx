@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProjectList from "../components/ProjectList";
+import ProjectList from "../components/Projects/ProjectList";
 import styled from "styled-components";
 
 const Container = styled.div`

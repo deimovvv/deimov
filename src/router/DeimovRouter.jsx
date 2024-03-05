@@ -12,6 +12,7 @@ import "../css/style.css";
 import ProjectsDetail from "../pages/ProjectsDetail";
 import getProjectByid from "../helpers/getProjectByid";
 import Presskit from "../pages/Presskit";
+import Copy from "../pages/Copy";
 
 const Content = styled.section`
 
@@ -39,7 +40,7 @@ const DeimovRouter = () => {
 
 
 
-    const routesWithOpacity = ['/projects', '/about', '/music', '/project'];
+    const routesWithOpacity = ['/projects', '/about', '/music', '/project', '/copy'];
 const shouldApplyOpacity = routesWithOpacity.some(route =>
   location.pathname.includes(route)
 );
@@ -72,6 +73,8 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
         <Route path="/music" element={<Music />} />
         <Route path="/presskit" element={<Presskit/>} />
         <Route path="/project/:id" element={<ProjectsDetail />} />
+        <Route path="/copy" element={<Copy />} />
+
 
       </Routes>
 

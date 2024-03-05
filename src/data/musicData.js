@@ -1,7 +1,7 @@
  
  
  
- const projectsData = [
+ const musicData = [
     {
         'id': '999_2',
         'name': 'Virtual Reality',
@@ -89,4 +89,4 @@
 
 ]
 
-export default projectsData
+export default musicData

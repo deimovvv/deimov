@@ -67,16 +67,16 @@ const HeaderNav = () => {
             <Link to="/music">Music</Link>{" "}
           </Li>
 
-          <Li>
+          {/* <Li>
             {" "}
             <Link to="/presskit">Presskit</Link>{" "}
-          </Li>
+          </Li> */}
 
-          <Li>
+        {/*   <Li>
             {" "}
             <Link to="/presskit">Shop</Link>{" "}
           </Li>
-
+ */}
 
           <Li>
             {" "}

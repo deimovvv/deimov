@@ -43,7 +43,7 @@ const about = () => {
   return (
     <>
       <Section id="about-section">
-        <Image src="/assets/deimovAI.jpg"></Image>
+        <Image src="/assets/DeimovAI_WEB.jpg"></Image>
 
         <Description>
           <H2>//</H2>

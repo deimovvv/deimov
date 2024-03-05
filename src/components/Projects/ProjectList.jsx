@@ -1,6 +1,6 @@
 import React from 'react'
 /* import getProjectByCategory  from '../helpers/getProjectsByCategory' */
-import { getProjectByCategory} from '../helpers/getProjectsByCategory.js'
+import { getProjectByCategory} from '../../helpers/getProjectsByCategory'
 import ProjectCard from './ProjectCard'
 import styled from "styled-components";
 
@@ -14,7 +14,6 @@ gap: 0px;
 const ProjectList = ({category}) => {
 
   const projects = getProjectByCategory(category)
-/*   const projects = useMemo( () => getProjectByCategory(category), [category]); */
 
 
   return (
