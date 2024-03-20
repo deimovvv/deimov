@@ -78,15 +78,15 @@ const MusicCard = ({ id, name, soundcloud, sello, spotify, youtube }) => {
 
         <CardLinks>
         <Link to={soundcloud} target="_blank">
-          <img src="/public/icons8-soundcloud-24.png" />
+          <img src="/icons8-soundcloud-24.png" />
         </Link>
         <Link to={spotify} target="_blank">
           {" "}
-          <img src="/public/icons8-spotify-24.png" />{" "}
+          <img src="/icons8-spotify-24.png" />{" "}
         </Link>
         <Link to={youtube} target="_blank">
           {" "}
-          <img src="/public/icons8-youtube-play-24.png" />{" "}
+          <img src="/icons8-youtube-play-24.png" />{" "}
         </Link>
         </CardLinks>
       </Card>
