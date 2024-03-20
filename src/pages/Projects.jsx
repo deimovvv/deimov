@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
 
-  margin-top: 150px;
+  margin-top: 50px;
   align-items: center;
 
   margin-bottom: 100px !important;
