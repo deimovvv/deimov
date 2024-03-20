@@ -5,7 +5,7 @@ body{
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 
-  
+
   @media only screen and (max-width: 768px) {
     html, body {
       overflow-y: hidden;
@@ -32,7 +32,7 @@ a{
 } */
 
 .layout{
-margin: 0 auto;
+margin: 0;
 }
 
 .opacity{

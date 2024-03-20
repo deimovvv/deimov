@@ -32,6 +32,11 @@ const Ul = styled.ul`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+
+  @media (max-width: 700px) {
+   
+  } 
 `;
 
 const Li = styled.li`
@@ -42,11 +47,11 @@ const Li = styled.li`
       color: #ffffff;
   font-size: 13px;
 
-
-  @media only screen and (max-width: 320px){
+  @media (max-width: 700px) {
     font-size: 9px;
     padding:20px 0px;
   }
+ 
 
   }
 

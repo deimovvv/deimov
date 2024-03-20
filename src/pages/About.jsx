@@ -5,37 +5,42 @@ import { motion } from "framer-motion";
 
 
 const Section = styled.section`
-  position: relative;
+
+max-width: 1000px; /* Ancho máximo del contenedor */
+margin: 0 auto; /* Centra el contenedor horizontalmente */
+padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding-bottom: 50px;
-  align-items: stretch;
-  justify-items: center;
-  justify-content:center
+  align-items: center; /* Alinea los elementos verticalmente */
+  justify-items: center; /* Alinea los elementos horizontalmente */
   overflow-y: hidden;
-  
-  @media (max-width: 780px){
+
+  @media (max-width: 700px) {
     grid-template-columns: 1fr;
-    grid-gap: 5px;
-  }
+  } 
+
+  
  
 `;
 
 const Image = styled.img`
-  width: 400px;
+width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  max-width: 400px; /* Ancho máximo de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+  transition: 0.5s;
+  object-fit: cover;
+  /* width: 400px;
   height: 400px;
   transition: 0.5s;
   object-fit: cover;
 
   :hover {
     transform: scale(1.02);
-  }
+  } */
 
-  @media (max-width: 780px){
-    width: 250px;
-    height: 250px;
-  }
   
 `;
 
@@ -43,10 +48,6 @@ const Description = styled.div`
   display: grid;
   gap: 10px;
 
-  @media (max-width: 780px){
-    font-size: 0.8em;
-    text-align: center;
-  }
 `;
 
 
@@ -59,7 +60,7 @@ const H2 = styled.h2`
 const Span = styled.p`
   color: whitesmoke;
   font-weight: 150;
-  width: 400px;
+  max-width: 400px;
   /* text-align: center; */
 `;
 
