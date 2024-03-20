@@ -12,9 +12,10 @@ const Container = styled.section`
   padding-bottom: 50px;
   align-items: center;
 
-  @media only screen and (max-width:320px){
+  @media only screen and (min-width:320px){
   grid-gap: 30px;
   padding-bottom: 40px;
+  grid-gap: 30px;
   }
 `;
 
@@ -22,7 +23,7 @@ const IMG = styled.img`
   width: 340px;
   height: 340px;
 
-  @media only screen and (max-width: 320px){
+  @media only screen and (max-width: 600px){
     width:200px;
     height:200px;
     margin-top:0px;
@@ -32,25 +33,28 @@ const Card = styled.div`
   .nameSong{
     margin:0px;
     padding-bottom:50px;
-    @media only screen and (max-width: 430px){
-      padding-bottom:0px;
+  
+    @media only screen and (min-width: 320px){
+      padding-bottom:10px;
+      }
+  }
+  .sello{
+    @media only screen and (max-width: 600px){
+      font-size:.7em;
   
   }
   }
-
-  @media only screen and (max-width: 320px){
-    width:200px;
   
-  }
 `;
 const CardLinks = styled.div`
-  display: grid;
-  flex-direction:column;
+  display: flex;
+  flex-direction:row;
   grid-gap: 20px;
-  padding-left:30px;
+  
 
   @media only screen and (max-width: 320px){
-  
+  flex-direction:column;
+  grid-gap: 0px;
   }
 `;
 
@@ -73,7 +77,7 @@ const MusicCard = ({ id, name, soundcloud, sello, spotify, youtube }) => {
         <div className="nameSong">
           {" "}
           {name}
-          <p>by {sello} </p>
+          <p className="sello">by {sello} </p>
         </div>
 
         <CardLinks>

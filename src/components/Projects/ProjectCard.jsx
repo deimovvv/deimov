@@ -10,7 +10,7 @@ const Project = styled.div`
 
 const IMG = styled.img`
   width:100%;
-  max-height: 450px;
+  max-height: 500px;
   margin-top: 0%;
   object-fit:cover;
 

@@ -18,8 +18,6 @@ font-size: clamp(0.9rem,1.5vw, 1.3rem);
 
   @media only screen and (max-width: 320px){
   margin-line: auto;
-  font-size:1.5rem;
-  top:50px;
 
 }
 `;
@@ -27,10 +25,12 @@ font-size: clamp(0.9rem,1.5vw, 1.3rem);
 const TitleContainer = styled.div`
 max-widht:200px;
 display:grid;
-align-items: strech;
 justify-content:start;
-padding-top: 180px;
+padding: 180px;
 
+@media only screen and (max-width: 430px){
+  padding: 180px 20px;
+}
 
 `;
 
