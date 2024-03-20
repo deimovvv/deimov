@@ -2,24 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Header = styled.header`
-  display: flex;
+const Header = styled.div`
+
   height: 132px;
-  padding-top: 10px;
-  margin-bottom: 0px;
 `;
 
-const Logo = styled.div`
-  flex: 2 1 auto;
+const Wrapper = styled.div`
+padding: 20px 20px;
+display: flex;
+flex: 2 1 auto;
 
-  .h2 {
-    font-size: 40px;
-  }
-`;
+
+@media only screen and (max-width: 320px){
+  padding: 20px 0px;
+}
+`
+
 
 const Nav = styled.nav`
   z-index: 999999;
   flex: 1 1 auto;
+
+  
 `;
 
 const Ul = styled.ul`
@@ -36,26 +40,33 @@ const Li = styled.li`
 
   a{
       color: #ffffff;
-  font-size: 15px;
+  font-size: 13px;
+
+
+  @media only screen and (max-width: 320px){
+    font-size: 9px;
+    padding:20px 0px;
+  }
 
   }
 
   a:hover {
     color: #b3b6ba;
   }
+
+ 
+  
 `;
 
 const HeaderNav = () => {
   return (
     <Header>
-      <Logo>
-        <h2>
+      <Wrapper>
+        <span>
           {" "}
-          <Link to="/"> Deimov </Link>{" "}
-        </h2>
-      </Logo>
-
-      <Nav>
+          <Link to="/"> /// </Link>{" "}
+        </span>
+        <Nav>
         <Ul>
           <Li>
             {" "}
@@ -82,8 +93,17 @@ const HeaderNav = () => {
             {" "}
             <Link to="/about">About</Link>{" "}
           </Li>
+          <Li>
+            {" "}
+            <Link to="/contact">Contact</Link>{" "}
+          </Li>
         </Ul>
       </Nav>
+     
+     
+      </Wrapper>
+
+     
     </Header>
   );
 };

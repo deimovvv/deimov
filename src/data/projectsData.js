@@ -66,8 +66,8 @@
          'role': 'Company',
          'description': 'Virtual Reality for Party',
          'video': 'https://www.youtube.com/watch?v=pUe8FA5ncso',
-         'image': '/assets/Roterton1.jpg',
-         'image2': '/assets/roterton2.jpg'
+         'image': '/assets/projectimages/Roterton1.jpg',
+         'image2': '/assets/projectimages/roterton2.jpg'
 
     },
 

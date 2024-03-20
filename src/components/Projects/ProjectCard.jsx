@@ -3,27 +3,28 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Project = styled.div`
-  margin: 0%;
+  margin-inline:auto;
   padding: 0%;
+  display:grid;
 `;
 
 const IMG = styled.img`
-  width: 440px;
-  height: 500px;
+  width:100%;
+  max-height: 450px;
   margin-top: 0%;
+  object-fit:cover;
+
 `;
 
 const TitleContainer = styled.div`
-  width: 440px;
-  height: 100%;
+  max-height: 500px;
   top: 0;
   left: 0;
-  position: absolute;
   background: rgba(0, 0, 0, 0.3);
-  display: flex;
+/*   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
   opacity: 0;
   transition: 0.6s;
 
@@ -38,11 +39,15 @@ const TitleContainer = styled.div`
   &:hover > * {
     transform: translateY(0px);
   }
+  @media only screen and (max-width: 430px){
+   
+  }
 `;
 
 const ImageContainer = styled.div`
   position: relative;
-  height: 500px;
+  max-height: 500px;
+
 `;
 
 const H3 = styled.h3`
@@ -58,7 +63,7 @@ const H3 = styled.h3`
 
 const ProjectCard = ({ id,  description, title }) => {
 
-  const projectURL = `/assets/${id}.jpg`;
+  const projectURL = `/assets/projectimages/${id}.jpg`;
 
 
   return (

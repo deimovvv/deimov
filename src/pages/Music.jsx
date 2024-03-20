@@ -1,14 +1,21 @@
 import React from 'react'
 import styled from "styled-components";
+import MusicList from '../components/Music/MusicList';
 
 
 
 const Projects = styled.div`
 
   overflow-y: hidden;
+
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  width:100%;
+
+  @media only screen and (max-width: 320px){
+    align-items: stretch;
+  }
 `
 
 
@@ -21,12 +28,17 @@ font-size: 1.1rem;
 `
 
 const Music = () => {
+
+
+
   return (
     
     <Projects>
         <Title>
-          Cooming very soon...
+         
         </Title>
+
+        <MusicList category={"music"}/>
     </Projects>
 
   )

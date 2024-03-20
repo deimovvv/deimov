@@ -5,9 +5,11 @@ import ProjectCard from './ProjectCard'
 import styled from "styled-components";
 
 const Container = styled.div`
+max-width:1090px;
+margin-inline:auto;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 0px;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+
 `
 
 

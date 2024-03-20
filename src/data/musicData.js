@@ -3,87 +3,48 @@
  
  const musicData = [
     {
-        'id': '999_2',
-        'name': 'Virtual Reality',
-        'date': '2024',
-        'client': '999 ciclo',
-         'technologies': 'React & React Three Fiber',
-         'category': 'VR',
-         'title': 'Virtual Reality for Party',
-         'role': 'Freelancer',
-         'description': `Virtual Reality Experience we made for party.`,
-         'video': 'https://www.youtube.com/watch?v=f3XfhRqPN7I'
+        'id': 'Aicolision',
+        'name': 'AI Collision',
+        'date': '2023',
+         'title': '',
+         'sello': 'Concepto Hipnotico',
+         'description': ``,
+         'soundcloud': 'https://soundcloud.com/conceptohipnotico/sets/deimov-ai-collision',
+         'spotify': 'https://open.spotify.com/intl-es/track/7bAb5CPM1cVnHQ5G2ND367?si=8c464d56a77c4eaa',
+         'youtube': 'https://www.youtube.com/watch?v=MZOSZyUjrnw',
+        "category": "music"
+
     },
     {
-        'id': 'evolvara',
-        'name': 'Virtual Reality',
+        'id': 'Quatumlove',
+        'name': 'Quatum love',
         'date': '2023',
-        'client': 'Coevo',
-         'technologies': 'React & React Three Fiber',
-         'category': '3D & Environment',
-         'title': 'Environment & Character',
-         'role': 'Freelancer',
-         'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).`,
-         'video': 'https://www.youtube.com/watch?v=Dt0Ucp6wbUk'
+         'title': '',
+         'sello': 'Concepto Hipnotico',
+         'description': ``,
+         'soundcloud': 'https://soundcloud.com/conceptohipnotico/deimov-quatum-love?si=5dd1983a01ea4066a477e0069d718fe5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+         'spotify': 'https://open.spotify.com/intl-es/track/7bAb5CPM1cVnHQ5G2ND367?si=8c464d56a77c4eaa',
+         'youtube': 'https://www.youtube.com/watch?v=MZOSZyUjrnw',
+         "category": "music"
+         
+    },
+    {
+        'id': 'NN',
+        'name': 'NN',
+        'date': '2023',
+         'title': '',
+         'sello': 'Deimov',
+         'description': ``,
+         'soundcloud': 'https://soundcloud.com/deimovvv/sets/nnn?si=4cc9cb5bd66e491495ddf74d1f1d4164&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+         'spotify': 'https://open.spotify.com/intl-es/album/6IAItvIDkPJsWXwFqMFpjw?si=Vrjd82ThS-qH-x_6M_4icQ',
+         'youtube': 'https://www.youtube.com/watch?v=MZOSZyUjrnw',
+         "category": "music"
          
     },
     
-    {
-        'id': 'coevoweb',
-        'name': 'Coevo Web',
-        'date': '2023',
-        'client': 'Coevo',
-         'technologies': 'React & React Three Fiber',
-         'category': 'Web',
-         'url': 'https://coevo-studio.com/',
-         'title': 'Website for Company',
-         'role': 'Freelancer',
-         'video': 'https://www.youtube.com/watch?v=T0IFN-n-8ps',
-         'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).`
-    },
-    {
-        'id': 'pcg',
-        'name': 'Procedural Content Generation',
-        'date': '2023',
-        'client': 'Deimov',
-         'technologies': 'Unreal Engine 5, PCG Framework',
-         'category': '3D & Environment',
-         'title': 'Experimentation with Procedural Content Generation',
-         'role': 'Freelancer',
-         'description': 'Experimentation with Procedural Content Generation',
-         'video': 'https://www.youtube.com/watch?v=T0IFN-n-8ps',
-
-    },
-
-    {
-        'id': 'RoterVR',
-        'name': 'Experiencia VR en Roterton',
-        'date': '2023',
-        'client': 'Roterton',
-         'technologies': 'Unreal Engine 5',
-         'category': 'VR',
-         'title': 'Virtual Reality Experience for Party',
-         'role': 'Company',
-         'description': 'Virtual Reality for Party',
-         'video': 'https://www.youtube.com/watch?v=pUe8FA5ncso',
-         'image': '/assets/Roterton1.jpg',
-         'image2': '/assets/roterton2.jpg'
-
-    },
-
-    {
-        'id': 'artic',
-        'name': 'Art',
-         'date': '2022',
-         'client': 'Deimov',
-         'technologies': 'Stable Diffusion & Touch Designer',
-         'category': '3D & Environment',
-         'title': 'Landscape',
-         'role': 'Freelancer',
-         'description': '',
-         'video': 'https://www.youtube.com/watch?v=iHV8JBfzrTg'
-
-    },
+    
+   
+   
 
     
 

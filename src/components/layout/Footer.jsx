@@ -9,14 +9,19 @@ color: white;
  align-items: flex-end;
 margin-top: 5px;
 
-.copy{
+{
     padding-bottom: 10px;
     font-size: 14px;
 
-
-    
-}
-
+    @media only screen and (max-width: 320px){
+    text-align:center;
+    display:flex;
+    align-items: center;
+  }
+  }
+  @media only screen and (max-width: 320px){
+   
+  }
 `
 
 
@@ -25,7 +30,7 @@ const Footer = () => {
     <FooterDiv> 
         <h2 className="copy">  &copy;  
           {" "}
-          <Link to="/copy"> Deimov </Link>{" "}
+          <Link to="/copy"> 2024 Deimov </Link>{" "}
           </h2>
     
 

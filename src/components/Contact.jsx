@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Section = styled.section`
-    width: 100vw;
-    height: 200px;
+    height: 70vh;
     background-color: rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-around;
@@ -21,37 +21,39 @@ justify-content: center;
 `
 
 const IMG = styled.img`
-width: 28px;
-height: 28px;
-padding-right: 5px;
+
+padding: 10px 10px;
 
 `
 
-const Contact = () => {
+const contact = () => {
   return (
     <>
         <Section id="contact-section">
-            
-    
             <div>
-              <p> SocialMedia</p>
+
+              <p> 
+                <span>
+                  <a href="mailto:correo@ejemplo.com"> deimovv@gmail.com</a>
+                </span>
+                <br/>
+                </p>
 
               <MediaContainer>
+
               <a href='https://www.linkedin.com/in/gonzalo-cortez-20b5a2160/' target="_blank">
                 <IMG src="/public/icons8-linkedin-24.png" alt="" />
               </a>
               <a href='https://www.instagram.com/deimovvv/' target="_blank">
-                <IMG src="/assets/deimovAI.jpg" alt="" />
+                <IMG src="/public/icons8-instagram-24.png" alt=""/>
               </a>
               </MediaContainer>
               
 
             </div>
-
-
         </Section>
     </>
   )
 }
 
-export default Contact
+export default contact

@@ -10,7 +10,7 @@ const Container = styled.section`
   position: fixed;
   pointer-events: all;
   z-index: -1;
-  height: 100vh;
+  max-height: 100%;
   inset: 0 !important;
 `;
 

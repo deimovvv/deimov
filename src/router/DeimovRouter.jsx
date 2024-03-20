@@ -12,6 +12,8 @@ import "../css/style.css";
 import ProjectsDetail from "../pages/ProjectsDetail";
 import getProjectByid from "../helpers/getProjectByid";
 import Presskit from "../pages/Presskit";
+import Contact from "../components/Contact";
+
 import Copy from "../pages/Copy";
 
 const Content = styled.section`
@@ -72,6 +74,7 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
         <Route exact path="/about" element={<About/>} />
         <Route path="/music" element={<Music />} />
         <Route path="/presskit" element={<Presskit/>} />
+        <Route path="/contact" element={<Contact/>}/>
         <Route path="/project/:id" element={<ProjectsDetail />} />
         <Route path="/copy" element={<Copy />} />
 

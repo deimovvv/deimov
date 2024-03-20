@@ -10,6 +10,11 @@ const SectionMain = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra el contenido verticalmente */
+
+  @media only screen and (max-width: 320px){
+    
+  }
+  
 `;
 
 const Section = styled.section`
@@ -18,10 +23,21 @@ const Section = styled.section`
   justify-content: space-around;
   overflow-y: hidden;
   gap: 40px; 
+
+  @media only screen and (max-width: 320px){
+    display:grid;
+    grid-template-columns:1fr;
+    justify-items: center;
+  }
 `;
 
 const IMGContainer = styled.div`
   height: 580px;
+
+  
+  @media only screen and (max-width: 320px){
+  height: 380px;
+  }
 `;
 
 const IMG = styled.img`
@@ -29,13 +45,24 @@ const IMG = styled.img`
   height: 500px;
   padding-bottom: 5px;
   transition: 0.5s;
-
+  
   :hover {
     transform: scale(1.02);
+  }
+
+  @media screen and (max-width: 320px){
+  width: 400px;
+  height: 440px;
+  }
+  :hover {
+  
   }
 `;
 
 const SectionDescription = styled.div`
+@media screen and (max-width: 320px){
+  width: 400px;
+  }
   .link {
     font-weight: 150;
     font-size: 15px;
@@ -153,7 +180,7 @@ color: #cfcdcd;
 
 }
 
-@media screen and (max-width: 30em) {
+@media screen and (max-width:320px) {
 margin-top: 18px;
   left: 87%;
   font-size: 14px;
@@ -169,7 +196,7 @@ const ProjectsDetail = () => {
   const navigate = useNavigate();
 
   const project = getProjectByid(id);
-  const projectURL = `/assets/${project.id}.jpg`;
+  const projectURL = `/assets/projectimages/${project.id}.jpg`;
 
   const handleBack = () => {
     navigate(-1); // Navega hacia atrás

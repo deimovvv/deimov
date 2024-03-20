@@ -3,15 +3,16 @@ import ProjectList from "../components/Projects/ProjectList";
 import styled from "styled-components";
 
 const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+
   margin-top: 150px;
   align-items: center;
 
   margin-bottom: 100px !important;
   z-index: -1;
 
+  @media only screen and (max-width: 320px){
+    margin-top:0px;
+  }
 
 `;
 
@@ -49,7 +50,7 @@ text-transform: uppercase;
 font-family: "Syncopate", sans-serif;
 font-size: 12px;
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 320px) {
   font-size: 10px;
   }
 
@@ -79,7 +80,7 @@ const projects = () => {
  
       <>
 
-          <h3>Selected Projects</h3>
+          <h3 className="titleProyects">Selected Projects</h3>
           
           <Filter className="prueba" >   
           {categories.map(category => (
@@ -94,8 +95,9 @@ const projects = () => {
         ))}
            </Filter>
            
-          
+          <Container>
           <ProjectList  category={selectedCategory === 'All' ? '' : selectedCategory}/>
+          </Container>
 
 
 
