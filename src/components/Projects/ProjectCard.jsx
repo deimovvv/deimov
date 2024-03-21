@@ -22,12 +22,13 @@ const TitleContainer = styled.div`
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.33); /* Cambia el color y la opacidad del fondo */
-  padding: 2.5px;
+  padding: 1.5px;
   text-align: center;
   color: white;
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.8s ease;
   transform: translateY(100%);
+  height: 50px;
 
   ${Project}:hover & {
     opacity: 1;
