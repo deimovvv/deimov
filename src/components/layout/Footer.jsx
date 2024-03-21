@@ -7,7 +7,7 @@ color: white;
  display: flex;
  justify-content: center;
  align-items: flex-end;
-margin-top: 5px;
+/* margin-top: 5px; */
 bottom: 0;
 
 

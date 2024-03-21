@@ -8,8 +8,8 @@ display: flex;
   align-items: center;
   height: calc(100vh - 40vh);
 
-  padding: 5vh 5vw; /* Añade un poco de padding basado en el tamaño de la pantalla */
-  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño final del contenedor */
+  padding: 5vh 5vw; 
+  box-sizing: border-box; 
 `;
 
 
