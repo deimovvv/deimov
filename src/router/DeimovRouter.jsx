@@ -24,9 +24,10 @@ overflow-y: auto;
 `
 
 const Main = styled.main`
-display: flex;
-  flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+/* display: flex;
+  flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */ */
   flex-direction: column;
+  overflow-y: hidden;
 `;
 
 const Layout = styled.div`
