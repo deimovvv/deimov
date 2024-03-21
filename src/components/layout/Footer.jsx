@@ -32,7 +32,7 @@ const Footer = () => {
     <FooterDiv> 
         <h2 className="copy">  &copy;  
           {" "}
-          <Link to="/copy"> 2024 Deimov </Link>{" "}
+          <Link to="/copy"> 2024 Deimov2 </Link>{" "}
           </h2>
     
 

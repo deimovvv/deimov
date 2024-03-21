@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import LoaderDeimov from "./layout/LoaderDeimov";
+import Footer from "./layout/Footer";
 
 const Container = styled.div`
 display: flex;
   justify-content: center;
-  align-items: center;
-  height: calc(100vh - 25vh);
+/*   height: calc(100vh - 25vh); */
+max-heigth:100vh;
   overflow-y: hidden;
-  padding: 3vh 5vw; 
+  padding: 25vh 5vw; 
   box-sizing: border-box; 
+  
 `;
 
 
@@ -20,6 +22,7 @@ font-size: clamp(1.9rem,1.5vw, 2.3rem);
  /*  font-size: 2.5rem */
   text-align: center;
   position: relative;
+  top:50%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
  font-weight: 200;
@@ -68,11 +71,13 @@ const home = () => {
     </Container>
     )}
 
-   <Test>
+ {/*   <Test>
           <h2 className="copy">  &copy;  
            2024 Deimov
           </h2>
-   </Test>
+   </Test> */}
+ 
+   
 
     </>
   );
