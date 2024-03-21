@@ -8,6 +8,7 @@ color: white;
  justify-content: center;
  align-items: flex-end;
 margin-top: 0px;
+background: red;
 bottom: 0;
 
 
