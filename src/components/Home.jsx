@@ -20,8 +20,7 @@ const Title = styled.span`
 font-size: clamp(1.9rem,1.5vw, 2.3rem);
  /*  font-size: 2.5rem */
   text-align: center;
-  position: relative;
-  top:40%;
+
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
  font-weight: 200;
@@ -48,8 +47,14 @@ align-items: center;
 
 `;
 
-const Test = styled.h3`
-text-align: center;
+const Test = styled.div`
+display:flex;
+justify-content:center;
+
+.copy{
+position:relative;
+top:100px;
+}
 `
 
 const home = () => {
@@ -71,11 +76,11 @@ const home = () => {
     </Container>
     )}
 
- {/*   <Test>
-          <h2 className="copy">  &copy;  
+   <Test>
+          <h3 className="copy">  &copy;  
            2024 Deimov
-          </h2>
-   </Test> */}
+          </h3>
+   </Test>
  
    
 

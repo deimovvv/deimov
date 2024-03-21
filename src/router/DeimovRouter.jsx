@@ -59,11 +59,12 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
 
   return (
     <div className={`layout ${shouldApplyOpacity ? 'opacity' : ''}`}>
+       <HeaderNav />
         <div className="layoutChild" >
 
-        <Layout>  
+    <Layout>  
     {/* Header y Navegacion  */}
-    <HeaderNav />
+   
     <Experience/> 
   
      
@@ -88,7 +89,7 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
       </Main>
 
       {/* Footer */}
-      <Footer/>
+     {/*  <Footer/> */}
      
       </Layout>
       </div>
