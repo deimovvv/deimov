@@ -18,7 +18,7 @@ import Copy from "../pages/Copy";
 
 const Content = styled.section`
 flex: 1;
-overflow-y: clip;
+
 
 
 `
@@ -27,7 +27,7 @@ const Main = styled.main`
 display: flex;
   flex: 1; 
   flex-direction: column;
- 
+  overscroll-behavior: none;
 `;
 
 const Layout = styled.div`
