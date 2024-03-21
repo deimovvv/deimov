@@ -48,7 +48,7 @@ const Li = styled.li`
   font-size: 13px;
 
   @media (max-width: 700px) {
-    font-size: 9px;
+    font-size: 12px;
     padding:20px 0px;
   }
  

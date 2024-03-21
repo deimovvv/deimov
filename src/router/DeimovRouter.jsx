@@ -18,8 +18,8 @@ import Copy from "../pages/Copy";
 
 const Content = styled.section`
 flex: 1;
-overflow-y:
-background-color: red;
+overflow-y: auto;
+
 
 `
 
