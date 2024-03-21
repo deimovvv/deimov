@@ -24,6 +24,10 @@ bottom: 0;
   }
   }
 
+  @media (max-width: 768px) {
+   display:none;
+
+  } 
 `
 
 
@@ -32,7 +36,7 @@ const Footer = () => {
     <FooterDiv> 
         <h2 className="copy">  &copy;  
           {" "}
-          <Link to="/copy"> 2024 Deimov2 </Link>{" "}
+          <Link to="/copy"> 2024 Deimov </Link>{" "}
           </h2>
     
 

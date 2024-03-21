@@ -5,6 +5,7 @@ import styled from "styled-components";
 import ReactPlayer from "react-player";
 
 const SectionMain = styled.div`
+max-width:100%;
   margin: 0 auto; /* Centra el contenido horizontalmente */
   display: flex;
   flex-direction: column;
@@ -17,34 +18,32 @@ const SectionMain = styled.div`
 `;
 
 const Section = styled.section`
-  position: relative;
+
+width: 100%; /* Ancho máximo del contenedor */
+padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  justify-content:center;
-  justify-items: center;
+  grid-gap: 20px;
+  padding-bottom: 50px;
+  align-items: center; /* Alinea los elementos verticalmente */
+  justify-items: start; /* Alinea los elementos horizontalmente */
   overflow-y: hidden;
-
 
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
   } 
+
 `;
 
 const IMGContainer = styled.div`
 
 display:flex;
 flex-direction:column;
-
-
-  
-  @media only screen and (max-width: 320px){
-  height: 380px;
-  }
 `;
 
 const IMG = styled.img`
-  max-width: 450px;
+max-width: 100%;
   height: 500px;
   padding-bottom: 5px;
   transition: 0.5s;
@@ -57,15 +56,16 @@ const IMG = styled.img`
   width: 400px;
   height: 440px;
   }
-  :hover {
-  
-  }
+ 
 `;
 
 const SectionDescription = styled.div`
 display:grid;
 gap:10px;
-
+max-width:100%;
+@media (max-width: 768px) {
+  
+} 
 /* @media screen and (max-width: 320px){
   width: 400px;
   } */
@@ -88,7 +88,7 @@ gap:10px;
     display: flex;
     padding-top: 10px;
     justify-content:space-between;
-    padding-right:50px;
+   /*  padding-right:50px; */
 
     @media (max-width: 912px) {
       padding-right:90px;
@@ -154,7 +154,7 @@ const IMG2 = styled.img`
 const SectionVideo = styled.section`
   margin-top: 80px;
   margin-bottom: 30px;
-  max-width: 1200px;
+   
   width: 100%;
 `;
 
