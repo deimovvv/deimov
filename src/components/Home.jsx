@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import LoaderDeimov from "./layout/LoaderDeimov";
+import Footer from "./layout/Footer";
 
 const Container = styled.div`
 display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 40vh);
-
+  height: calc(100vh - 25vh);
+  
   padding: 5vh 5vw; 
   box-sizing: border-box; 
 `;
@@ -57,11 +58,14 @@ const home = () => {
 
   return (
     <>{ isLoading ?  <LoaderDeimov /> : (
-      <><Container><TitleContainer>
+      <Container><TitleContainer>
       <Title>Welcome to Deimov Ecosystem</Title>
-    </TitleContainer>  </Container>
-    </> )}
-  
+    </TitleContainer>  
+   
+    </Container>
+    )}
+
+    <Footer/>
 
     </>
   );

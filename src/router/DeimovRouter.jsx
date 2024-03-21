@@ -33,7 +33,8 @@ display: flex;
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
-  /* min-height: 100vh; */
+/*   max-height: 100%; */
+  min-height: 100vh;
 `;
 
 
@@ -88,7 +89,7 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
       </Main>
 
       {/* Footer */}
-      <Footer/>
+      {/* <Footer/> */}
      
       </Layout>
       </div>
