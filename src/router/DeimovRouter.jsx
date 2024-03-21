@@ -17,14 +17,15 @@ import Contact from "../components/Contact";
 import Copy from "../pages/Copy";
 
 const Content = styled.section`
-
-
+flex: 1;
+overflow-y: auto;
 
 
 `
 
 const Main = styled.main`
   flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+
 `;
 
 const Layout = styled.div`
