@@ -7,8 +7,8 @@ display: flex;
   justify-content: center;
   align-items: center;
   height: calc(100vh - 25vh);
-  overflow: hidden;
-  padding: 5vh 5vw; 
+  overflow-y: hidden;
+  padding: 3vh 5vw; 
   box-sizing: border-box; 
 `;
 
@@ -70,7 +70,7 @@ const home = () => {
 
    <Test>
           <h2 className="copy">  &copy;  
-           2024 Deimovvvv
+           2024 Deimov
           </h2>
    </Test>
 
