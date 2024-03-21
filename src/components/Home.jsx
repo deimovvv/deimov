@@ -21,7 +21,7 @@ font-size: clamp(1.9rem,1.5vw, 2.3rem);
  /*  font-size: 2.5rem */
   text-align: center;
   position: relative;
-  top:50%;
+  top:40%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
  font-weight: 200;
@@ -63,7 +63,8 @@ const home = () => {
 
   return (
     <>{ isLoading ?  <LoaderDeimov /> : (
-      <Container><TitleContainer>
+      <Container>
+        <TitleContainer>
       <Title>Welcome to Deimov Ecosystem</Title>
     </TitleContainer>  
    
