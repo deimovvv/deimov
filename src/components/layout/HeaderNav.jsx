@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Header = styled.div`
-
+  max-width:100%;
   height: 132px;
 `;
 
@@ -12,7 +12,7 @@ padding: 20px 20px;
 display: flex;
 flex: 2 1 auto;
 background-color: rgba(0,0,0,0.65);
-
+align-items: flex-end;
 
 @media only screen and (max-width: 320px){
   padding: 20px 0px;
@@ -25,7 +25,7 @@ background-color: rgba(0,0,0,0.65);
 const Nav = styled.nav`
   z-index: 999999;
   flex: 1 1 auto;
-
+  
   
 `;
 
@@ -34,7 +34,7 @@ const Ul = styled.ul`
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+ 
 
 
   @media (max-width: 700px) {
