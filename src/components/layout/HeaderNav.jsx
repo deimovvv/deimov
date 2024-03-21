@@ -15,6 +15,8 @@ flex: 2 1 auto;
 
 @media only screen and (max-width: 320px){
   padding: 20px 0px;
+  background-color: rgba(0,0,0,0.55);
+
 }
 `
 
@@ -22,6 +24,7 @@ flex: 2 1 auto;
 const Nav = styled.nav`
   z-index: 999999;
   flex: 1 1 auto;
+
 
   
 `;
@@ -35,13 +38,14 @@ const Ul = styled.ul`
 
 
   @media (max-width: 700px) {
-   
+
   } 
 `;
 
 const Li = styled.li`
   text-transform: uppercase;
   margin-left: 15px;
+
 
   a{
       color: #ffffff;
@@ -50,6 +54,9 @@ const Li = styled.li`
   @media (max-width: 700px) {
     font-size: 14px;
     padding:20px 0px;
+
+   
+
   }
  
 

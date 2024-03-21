@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Section = styled.section`
     height: 70vh;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.33);
     display: flex;
     justify-content: space-around;
     align-items: center;
