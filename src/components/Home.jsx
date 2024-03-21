@@ -70,7 +70,7 @@ const home = () => {
 
    <Test>
           <h2 className="copy">  &copy;  
-           2024 Deimovvv
+           2024 Deimov
           </h2>
    </Test>
 
