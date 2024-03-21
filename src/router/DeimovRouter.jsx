@@ -88,7 +88,7 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
       </Main>
 
       {/* Footer */}
-     {/*  <Footer/> */}
+      <Footer/>
      
       </Layout>
       </div>

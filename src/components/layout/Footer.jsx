@@ -9,8 +9,7 @@ color: white;
  align-items: flex-end;
 margin-top: 5px;
 bottom: 0;
-width: 100%;
-height: 50px;
+
 
 {
     padding-bottom: 10px;

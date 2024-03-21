@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import LoaderDeimov from "./layout/LoaderDeimov";
-import Footer from "./layout/Footer";
 
+const Container = styled.div`
+display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  padding: 5vh 5vw; /* Añade un poco de padding basado en el tamaño de la pantalla */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño final del contenedor */
+`;
 
 
 const Title = styled.span`
@@ -24,12 +31,12 @@ font-size: clamp(0.9rem,1.5vw, 2.3rem);
 `;
 
 const TitleContainer = styled.div`
-max-widht:200px;
-display:grid;
-justify-content:start;
-padding: 180px;
-height: 220px;
-
+max-width: 800px; /* Establece un máximo para el contenedor del título */
+padding: 0; /* Elimina el padding aquí para un control más fino en Container */
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
 @media only screen and (max-width: 430px){
   padding: 180px 20px;
 
@@ -48,11 +55,13 @@ const home = () => {
 
 
   return (
-    <>{ isLoading ?  <LoaderDeimov /> :  <TitleContainer>
+    <>{ isLoading ?  <LoaderDeimov /> : (
+      <><Container><TitleContainer>
       <Title>Welcome to Deimov Ecosystem</Title>
-    </TitleContainer>}
+    </TitleContainer>  </Container>
+    </> )}
+  
 
-    <Footer/>
     </>
   );
 };
