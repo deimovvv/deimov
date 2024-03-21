@@ -8,7 +8,7 @@ color: white;
  justify-content: center;
  align-items: flex-end;
 margin-top: 0px;
-background: red;
+
 bottom: 0;
 
 
@@ -20,11 +20,10 @@ bottom: 0;
     text-align:center;
     display:flex;
     align-items: center;
+    
   }
   }
-  @media only screen and (max-width: 320px){
-   
-  }
+
 `
 
 
@@ -36,7 +35,6 @@ const Footer = () => {
           <Link to="/copy"> 2024 Deimov </Link>{" "}
           </h2>
     
-
 
        
           </FooterDiv>

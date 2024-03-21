@@ -8,7 +8,7 @@ display: flex;
   justify-content: center;
   align-items: center;
   height: calc(100vh - 25vh);
-  
+  overflow: hidden;
   padding: 5vh 5vw; 
   box-sizing: border-box; 
 `;
