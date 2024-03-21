@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import LoaderDeimov from "./layout/LoaderDeimov";
-import Footer from "./layout/Footer";
 
 const Container = styled.div`
 display: flex;
@@ -69,8 +68,11 @@ const home = () => {
     </Container>
     )}
 
-    {/* <Footer/> */}
-   <Test>footer</Test>
+   <Test>
+          <h2 className="copy">  &copy;  
+           2024 Deimov
+          </h2>
+   </Test>
 
     </>
   );

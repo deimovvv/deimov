@@ -5,7 +5,6 @@ import styled from "styled-components";
 import ReactPlayer from "react-player";
 
 const SectionMain = styled.div`
-  width: 90vw;
   margin: 0 auto; /* Centra el contenido horizontalmente */
   display: flex;
   flex-direction: column;
@@ -19,20 +18,24 @@ const SectionMain = styled.div`
 
 const Section = styled.section`
   position: relative;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-content:center;
+  justify-items: center;
   overflow-y: hidden;
-  gap: 40px; 
 
-  @media only screen and (max-width: 320px){
-    display:grid;
-    grid-template-columns:1fr;
-    justify-items: center;
-  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  } 
 `;
 
 const IMGContainer = styled.div`
-  height: 580px;
+
+display:flex;
+flex-direction:column;
+
 
   
   @media only screen and (max-width: 320px){
@@ -41,7 +44,7 @@ const IMGContainer = styled.div`
 `;
 
 const IMG = styled.img`
-  width: 440px;
+  max-width: 450px;
   height: 500px;
   padding-bottom: 5px;
   transition: 0.5s;
@@ -60,9 +63,13 @@ const IMG = styled.img`
 `;
 
 const SectionDescription = styled.div`
-@media screen and (max-width: 320px){
+display:grid;
+gap:10px;
+
+/* @media screen and (max-width: 320px){
   width: 400px;
-  }
+  } */
+
   .link {
     font-weight: 150;
     font-size: 15px;
@@ -73,12 +80,29 @@ const SectionDescription = styled.div`
     padding-top: 20px;
     display: flex;
     flex-direction: column;
+   
+
   }
 
   .dataProject1 {
     display: flex;
-    justify-content: space-between;
     padding-top: 10px;
+    justify-content:space-between;
+    padding-right:50px;
+
+    @media (max-width: 912px) {
+      padding-right:90px;
+  
+    } 
+  @media (max-width: 768px) {
+    padding-right:170px;
+
+  } 
+  @media (max-width: 412px) {
+    padding-right:170px;
+    padding-left:106px;
+
+  } 
   }
 
   span {
@@ -229,10 +253,10 @@ const ProjectsDetail = () => {
           </div>
 
           <div className="dataProject1">
-            <span>
+            <span className="span1">
               Client: <h3>{project.client}</h3>
             </span>
-            <span>
+            <span className="span2">
               Date: <h3>{project.date}</h3>{" "}
             </span>
           </div>

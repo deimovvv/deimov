@@ -11,11 +11,12 @@ const Wrapper = styled.div`
 padding: 20px 20px;
 display: flex;
 flex: 2 1 auto;
+background-color: rgba(0,0,0,0.65);
 
 
 @media only screen and (max-width: 320px){
   padding: 20px 0px;
-  background-color: rgba(0,0,0,0.55);
+  background-color: rgba(0,0,0,0.65);
 
 }
 `
@@ -24,7 +25,6 @@ flex: 2 1 auto;
 const Nav = styled.nav`
   z-index: 999999;
   flex: 1 1 auto;
-
 
   
 `;

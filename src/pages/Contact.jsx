@@ -10,6 +10,7 @@ const Section = styled.section`
     align-items: center;
     z-index: 2;
     position: relative;
+   margin-bottom:45px;
    
 `
 
@@ -24,6 +25,9 @@ const IMG = styled.img`
 
 padding: 10px 10px;
 
+`
+const Test = styled.h3`
+text-align: center;
 `
 
 const contact = () => {
@@ -51,7 +55,13 @@ const contact = () => {
               
 
             </div>
+          
         </Section>
+        <Test>
+          <h2 className="copy">  &copy;  
+           2024 Deimov
+          </h2>
+          </Test>
     </>
   )
 }

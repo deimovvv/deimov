@@ -32,14 +32,12 @@ width: 100%; /* Ocupa el 100% del ancho del contenedor */
   height: auto; /* Altura automática para mantener la proporción */
   transition: 0.5s;
   object-fit: cover;
-  /* width: 400px;
-  height: 400px;
   transition: 0.5s;
-  object-fit: cover;
+  object-fit: cover
 
   :hover {
     transform: scale(1.02);
-  } */
+  }
 
   
 `;
@@ -63,6 +61,9 @@ const Span = styled.p`
   max-width: 400px;
   /* text-align: center; */
 `;
+
+
+
 
 const about = () => {
   return (
