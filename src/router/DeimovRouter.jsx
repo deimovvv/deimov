@@ -24,10 +24,10 @@ overflow-y: auto;
 `
 
 const Main = styled.main`
-/* display: flex;
-  flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */ */
+display: flex;
+  flex: 1; 
   flex-direction: column;
-  overflow-y: hidden;
+ 
 `;
 
 const Layout = styled.div`
@@ -88,7 +88,8 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
       </Main>
 
       {/* Footer */}
-      <Footer/>
+     {/*  <Footer/> */}
+     
       </Layout>
       </div>
     </div>

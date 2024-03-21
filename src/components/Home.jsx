@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import LoaderDeimov from "./layout/LoaderDeimov";
+import Footer from "./layout/Footer";
 
 
 
 const Title = styled.span`
   color: #c5c5c5;
   
-font-size: clamp(0.9rem,1.5vw, 1.3rem);
-  /* font-size: 2.5rem */
+font-size: clamp(0.9rem,1.5vw, 2.3rem);
+  font-size: 2.5rem
   text-align: center;
   position: relative;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 200;
+  /* font-weight: 200; */
 
 
   @media only screen and (max-width: 320px){
@@ -27,6 +28,7 @@ max-widht:200px;
 display:grid;
 justify-content:start;
 padding: 180px;
+height: 220px;
 
 @media only screen and (max-width: 430px){
   padding: 180px 20px;
@@ -49,6 +51,8 @@ const home = () => {
     <>{ isLoading ?  <LoaderDeimov /> :  <TitleContainer>
       <Title>Welcome to Deimov Ecosystem</Title>
     </TitleContainer>}
+
+    <Footer/>
     </>
   );
 };

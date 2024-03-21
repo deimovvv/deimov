@@ -45,10 +45,10 @@ const Li = styled.li`
 
   a{
       color: #ffffff;
-  font-size: 13px;
+  font-size: 1rem;
 
   @media (max-width: 700px) {
-    font-size: 12px;
+    font-size: 14px;
     padding:20px 0px;
   }
  
@@ -63,14 +63,24 @@ const Li = styled.li`
   
 `;
 
+
+const Span = styled.span`
+margin-top: 15px;
+color: whitesmoke;
+
+@media (max-width: 700px) {
+  margin-top: 15px;
+}
+`
+
 const HeaderNav = () => {
   return (
     <Header>
       <Wrapper>
-        <span>
+        <Span>
           {" "}
           <Link to="/"> /// </Link>{" "}
-        </span>
+        </Span>
         <Nav>
         <Ul>
           <Li>

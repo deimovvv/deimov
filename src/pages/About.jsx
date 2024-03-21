@@ -77,7 +77,7 @@ const about = () => {
 
         <Description>
           <H2>//</H2>
-          <hr />
+        
           <br />
           <Span>
             Gonzalo Cortez aka Deimov <br /> is a Systemic Thinker lover of
