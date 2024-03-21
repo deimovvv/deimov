@@ -1,70 +1,67 @@
-import styled from "styled-components";
+import React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const Project = styled.div`
-  margin-inline:auto;
+  margin-inline: auto;
   padding: 0%;
-  display:grid;
+  display: grid;
 `;
 
 const IMG = styled.img`
-  width:100%;
+  width: 100%;
   max-height: 500px;
   margin-top: 0%;
-  object-fit:cover;
-
+  object-fit: cover;
 `;
 
 const TitleContainer = styled.div`
-  max-height: 500px;
-  top: 0;
+  position: absolute;
+  bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
-/*   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
+  right: 0;
+  background: rgba(0, 0, 0, 0.33); /* Cambia el color y la opacidad del fondo */
+  padding: 2.5px;
+  text-align: center;
+  color: white;
   opacity: 0;
-  transition: 0.6s;
+  transition: opacity 0.3s ease, transform 0.8s ease;
+  transform: translateY(100%);
 
-  &:hover {
+  ${Project}:hover & {
     opacity: 1;
+    transform: translateY(0%);
   }
 
-  & > * {
-    transform: translateY(25px);
-    transition: transform 0.6s;
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    position: static;
+    background: none;
+    opacity: 1;
+    transform: none;
+    padding: 2.5px;
+    text-align: left;
   }
-  &:hover > * {
-    transform: translateY(0px);
-  }
-  @media only screen and (max-width: 430px){
-   
-  }
+
+`;
+
+
+
+
+
+const H3 = styled.h3`
+  font-weight: 200;
+  font-size: 1rem;
 `;
 
 const ImageContainer = styled.div`
   position: relative;
   max-height: 500px;
-
 `;
 
-const H3 = styled.h3`
-  font-weight: 200;
-  font-size: 1rem;
-  color: white;
-  position: absolute;
-  bottom: 25px;
-`;
-
-
-
-
-const ProjectCard = ({ id,  description, title }) => {
-
+const ProjectCard = ({ id, description, title }) => {
   const projectURL = `/assets/projectimages/${id}.jpg`;
-
 
   return (
     <motion.div
@@ -74,18 +71,11 @@ const ProjectCard = ({ id,  description, title }) => {
     >
       <Project className="animate__animated animate__fadeIn">
         <ImageContainer>
-          <Link
-            onClick={() => handleClick("project-section")}
-            to={`/project/${id}`}
-          > 
-        
-             <IMG src={projectURL} />
-         
-
-             
-          
-             
-            <TitleContainer>{<H3> {title} </H3>}</TitleContainer>
+          <Link to={`/project/${id}`}>
+            <IMG src={projectURL} alt={title} />
+            <TitleContainer>
+              <H3>{title}</H3>
+            </TitleContainer>
           </Link>
         </ImageContainer>
       </Project>
@@ -94,4 +84,3 @@ const ProjectCard = ({ id,  description, title }) => {
 };
 
 export default ProjectCard;
-
