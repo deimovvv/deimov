@@ -17,13 +17,13 @@ display: flex;
 const Title = styled.span`
   color: #c5c5c5;
   
-font-size: clamp(0.9rem,1.5vw, 2.3rem);
-  font-size: 2.5rem
+font-size: clamp(1.9rem,1.5vw, 2.3rem);
+ /*  font-size: 2.5rem */
   text-align: center;
   position: relative;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
- 
+ font-weight: 200;
 
 
   @media only screen and (max-width: 320px){
@@ -47,6 +47,10 @@ align-items: center;
 
 `;
 
+const Test = styled.h3`
+text-align: center;
+`
+
 const home = () => {
 
   const [isLoading, setIsLoading] = useState(true);
@@ -65,7 +69,8 @@ const home = () => {
     </Container>
     )}
 
-    <Footer/>
+    {/* <Footer/> */}
+   <Test>footer</Test>
 
     </>
   );
