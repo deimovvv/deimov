@@ -42,10 +42,10 @@ const contact = () => {
               <MediaContainer>
 
               <a href='https://www.linkedin.com/in/gonzalo-cortez-20b5a2160/' target="_blank">
-                <IMG src="/public/icons8-linkedin-24.png" alt="" />
+                <IMG src="/icons8-linkedin-24.png" alt="" />
               </a>
               <a href='https://www.instagram.com/deimovvv/' target="_blank">
-                <IMG src="/public/icons8-instagram-24.png" alt=""/>
+                <IMG src="/icons8-instagram-24.png" alt=""/>
               </a>
               </MediaContainer>
               

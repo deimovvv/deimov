@@ -12,7 +12,7 @@ import "../css/style.css";
 import ProjectsDetail from "../pages/ProjectsDetail";
 import getProjectByid from "../helpers/getProjectByid";
 import Presskit from "../pages/Presskit";
-import Contact from "../components/Contact";
+import Contact from "../pages/Contact";
 
 import Copy from "../pages/Copy";
 

@@ -69,7 +69,7 @@ margin-top: 15px;
 color: whitesmoke;
 
 @media (max-width: 700px) {
-  margin-top: 15px;
+  margin-top: 0px;
 }
 `
 
