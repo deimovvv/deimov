@@ -18,11 +18,13 @@ import Copy from "../pages/Copy";
 
 const Content = styled.section`
 flex: 1;
-
+overflow-y:
+background-color: red;
 
 `
 
 const Main = styled.main`
+display: flex;
   flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
   flex-direction: column;
 `;
@@ -65,7 +67,7 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
   
      
      {/* Contenido central */}
-     <Main>
+   <Main>
      <Content>
 
       <Routes>

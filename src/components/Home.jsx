@@ -31,7 +31,6 @@ padding: 180px;
 @media only screen and (max-width: 430px){
   padding: 180px 20px;
 
-
 }
 
 
