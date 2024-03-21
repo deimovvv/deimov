@@ -33,7 +33,6 @@ display: flex;
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
-/*   max-height: 100%; */
   min-height: 100vh;
 `;
 

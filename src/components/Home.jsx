@@ -23,7 +23,7 @@ font-size: clamp(0.9rem,1.5vw, 2.3rem);
   position: relative;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* font-weight: 200; */
+ 
 
 
   @media only screen and (max-width: 320px){
@@ -40,7 +40,7 @@ justify-content: center;
 flex-direction: column;
 align-items: center;
 @media only screen and (max-width: 430px){
-  padding: 180px 20px;
+ 
 
 }
 
