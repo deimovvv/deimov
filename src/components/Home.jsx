@@ -6,11 +6,10 @@ import Footer from "./layout/Footer";
 const Container = styled.div`
 display: flex;
   justify-content: center;
-/*   height: calc(100vh - 25vh); */
-max-heigth:100vh;
-  overflow-y: hidden;
-  padding: 25vh 5vw; 
+/* min-height: calc(100vh - 25vh); */
+ padding: 25vh 5vw; 
   box-sizing: border-box; 
+  overscroll-behavior: none;
   
 `;
 

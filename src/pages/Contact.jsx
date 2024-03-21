@@ -3,21 +3,24 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Section = styled.section`
-    height: 70vh;
-    background-color: rgba(0,0,0,0.33);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 2;
-    position: relative;
-   margin-bottom:45px;
    
+height: 70vh;
+background-color: rgba(0,0,0,0.33);
+display: flex;
+justify-content: space-around;
+align-items: center;
+z-index: 2;
+position: relative;
+
+   .div{
+    align-content:center;
+   }
 `
 
 const MediaContainer = styled.div`
 display: flex;
 justify-content: center;
-
+justify-items:center;
 
 `
 
@@ -35,8 +38,7 @@ const contact = () => {
     <>
         <Section id="contact-section">
             <div>
-
-              <p> 
+                <p> 
                 <span>
                   <a href="mailto:correo@ejemplo.com"> deimovv@gmail.com</a>
                 </span>
@@ -57,11 +59,11 @@ const contact = () => {
             </div>
           
         </Section>
-        <Test>
+       {/*  <Test>
           <h2 className="copy">  &copy;  
            2024 Deimov
           </h2>
-          </Test>
+          </Test> */}
     </>
   )
 }
