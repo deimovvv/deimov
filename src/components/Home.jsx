@@ -12,7 +12,7 @@ overflow-y: hidden;
   
 @media only screen and (max-width: 320px){
 
-
+  min-height: calc(100vh - 35vh); 
 }
 `;
 
