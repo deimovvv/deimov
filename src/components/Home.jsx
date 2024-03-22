@@ -42,8 +42,10 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;
+
 @media only screen and (max-width: 430px){
- 
+ position:relative;
+ top:-85px;
 
 }
 
