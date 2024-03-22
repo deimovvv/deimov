@@ -18,6 +18,8 @@ position: relative;
 
    @media (max-width: 700px) {
     height: 80vh;
+    position:relative;
+    top:-35px;
   } 
 `
 

@@ -10,6 +10,10 @@ padding: 25vh 5vw;
 box-sizing: border-box; 
 overflow-y: hidden; 
   
+@media only screen and (max-width: 320px){
+
+
+}
 `;
 
 
