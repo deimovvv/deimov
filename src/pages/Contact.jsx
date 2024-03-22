@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Footer from '../components/layout/Footer';
 
 const Section = styled.section`
    
-height: 70vh;
+height: 75vh;
 background-color: rgba(0,0,0,0.33);
 display: flex;
 justify-content: space-around;
@@ -72,6 +73,8 @@ const contact = () => {
             </div>
           
         </Section>
+
+        <Footer/>
     </>
   )
 }

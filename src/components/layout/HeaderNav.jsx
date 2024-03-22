@@ -11,7 +11,6 @@ const Wrapper = styled.div`
 padding: 20px 20px;
 display: flex;
 flex: 2 1 auto;
-background-color: rgba(0,0,0,0.65);
 align-items: flex-end;
 
 @media only screen and (max-width: 320px){

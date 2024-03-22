@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
+import Footer from '../components/layout/Footer';
 import MusicList from '../components/Music/MusicList';
 
 
@@ -32,15 +33,17 @@ const Music = () => {
 
 
   return (
-    
+    <>
     <Projects>
         <Title>
          
         </Title>
 
         <MusicList category={"music"}/>
+       
     </Projects>
-
+    
+</>
   )
 }
 

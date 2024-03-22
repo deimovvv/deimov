@@ -7,10 +7,10 @@ const Container = styled.div`
 display: flex;
 justify-content: center;
 min-height: calc(100vh - 25vh); 
-padding: 25vh 5vw; 
+padding: 5vh 5vw; 
 box-sizing: border-box; 
 overflow-y: hidden; 
-  
+ 
 @media only screen and (max-width: 320px){
 
   min-height: calc(100vh - 35vh); 
@@ -22,7 +22,7 @@ const Title = styled.span`
   color: #c5c5c5;
   
 font-size: clamp(1.9rem,1.5vw, 2.3rem);
- /*  font-size: 2.5rem */
+
   text-align: center;
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -37,10 +37,10 @@ font-size: clamp(1.9rem,1.5vw, 2.3rem);
 `;
 
 const TitleContainer = styled.div`
-max-width: 800px; /* Establece un máximo para el contenedor del título */
-padding: 0; /* Elimina el padding aquí para un control más fino en Container */
+max-width: 800px; 
+padding: 0; 
 display: flex;
-justify-content: center;
+margin-top: 150px;
 flex-direction: column;
 align-items: center;
 
@@ -82,12 +82,7 @@ const home = () => {
     </Container>
     )}
 
-{/*    <Test>
-          <h3 className="copy">  &copy;  
-           2024 Deimov
-          </h3>
-   </Test>
-  */}
+
   <Footer/>
    
 
