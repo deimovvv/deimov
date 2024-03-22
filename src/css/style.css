@@ -12,11 +12,11 @@ body{
   overscroll-behavior: none;
 
 
-  @media only screen and (max-width: 768px) {
+/*   @media only screen and (max-width: 768px) {
     html, body {
       overscroll-behavior: none;
     }
-  }
+  } */
 
 
 }

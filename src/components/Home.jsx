@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import LoaderDeimov from "./layout/LoaderDeimov";
-import Footer from "./layout/Footer";
 
 const Container = styled.div`
 display: flex;
 justify-content: center;
 min-height: calc(100vh - 25vh); 
- padding: 25vh 5vw; 
-  box-sizing: border-box; 
-  /* overscroll-behavior: none; */
+padding: 25vh 5vw; 
+box-sizing: border-box; 
+overflow-y: hidden; 
   
 `;
 

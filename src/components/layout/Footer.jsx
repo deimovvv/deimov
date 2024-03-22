@@ -24,20 +24,19 @@ color: white;
     
   }
   }
-
-  @media (max-width: 768px) {
-
-
-  } 
+  .copy{
+    .link{
+      font-size: 1em;
+    }
+  }
 `
-
 
 const Footer = () => {
   return (
     <FooterDiv> 
         <h2 className="copy">  &copy;  
           {" "}
-          <Link to="/copy"> 2024 Deimov </Link>{" "}
+          <Link className="link"to="/copy"> 2024 Deimov </Link>{" "}
           </h2>
     
 
