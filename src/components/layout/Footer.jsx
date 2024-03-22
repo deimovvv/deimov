@@ -13,7 +13,8 @@ color: white;
  padding:1rem;
 
  @media (max-width: 700px) {
-  padding-top:.1rem;
+  bottom:25px;
+ 
  } 
 
 {
