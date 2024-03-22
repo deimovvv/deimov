@@ -20,6 +20,7 @@ position: relative;
     height: 75vh;
     position:relative;
     top:-35px;
+    margin-bottom:20px;
   } 
 `
 
