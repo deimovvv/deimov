@@ -91,7 +91,7 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
      
 
       {/* Footer */}
-      <Footer/>
+     {/*  <Footer/> */}
      
       </Layout>
       </div>

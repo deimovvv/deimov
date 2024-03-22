@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Footer from "./layout/Footer";
 import LoaderDeimov from "./layout/LoaderDeimov";
 
 const Container = styled.div`
@@ -45,7 +46,7 @@ align-items: center;
 
 @media only screen and (max-width: 430px){
  position:relative;
- top:-85px;
+ 
 
 }
 
@@ -87,6 +88,7 @@ const home = () => {
           </h3>
    </Test>
   */}
+  <Footer/>
    
 
     </>
