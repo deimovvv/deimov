@@ -13,27 +13,27 @@ import ProjectsDetail from "../pages/ProjectsDetail";
 import getProjectByid from "../helpers/getProjectByid";
 import Presskit from "../pages/Presskit";
 import Contact from "../pages/Contact";
-
 import Copy from "../pages/Copy";
 
 const Content = styled.section`
 flex: 1;
 
 
-
 `
 
-const Main = styled.main`
+/* const Main = styled.main`
 display: flex;
   flex: 1; 
   flex-direction: column;
-  overscroll-behavior: none;
-`;
+  max-height:70vh;
+  
+`; */
 
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100% - 5rem);
+  position:relative;
 `;
 
 
@@ -69,7 +69,7 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
   
      
      {/* Contenido central */}
-   <Main>
+  
      <Content>
 
       <Routes>
@@ -86,10 +86,10 @@ const shouldApplyOpacity = routesWithOpacity.some(route =>
       </Routes>
 
       </Content>
-      </Main>
+     
 
       {/* Footer */}
-     {/*  <Footer/> */}
+      <Footer/>
      
       </Layout>
       </div>

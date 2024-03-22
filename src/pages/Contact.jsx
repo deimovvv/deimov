@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Section = styled.section`
    
-height: 60vh;
+height: 70vh;
 background-color: rgba(0,0,0,0.33);
 display: flex;
 justify-content: space-around;
@@ -15,6 +15,10 @@ position: relative;
    .div{
     align-content:center;
    }
+
+   @media (max-width: 700px) {
+    height: 80vh;
+  } 
 `
 
 const MediaContainer = styled.div`
@@ -30,7 +34,7 @@ padding: 10px 10px;
 
 `
 
-const Test = styled.div`
+/* const Test = styled.div`
 display:flex;
 justify-content:center;
 
@@ -38,7 +42,7 @@ justify-content:center;
 position:relative;
 top:100px;
 }
-`
+` */
 const contact = () => {
   return (
     <>
@@ -65,11 +69,6 @@ const contact = () => {
             </div>
           
         </Section>
-        <Test>
-          <h3 className="copy">  &copy;  
-           2024 Deimov
-          </h3>
-          </Test>
     </>
   )
 }

@@ -5,11 +5,11 @@ import Footer from "./layout/Footer";
 
 const Container = styled.div`
 display: flex;
-  justify-content: center;
-/* min-height: calc(100vh - 25vh); */
+justify-content: center;
+min-height: calc(100vh - 25vh); 
  padding: 25vh 5vw; 
   box-sizing: border-box; 
-  overscroll-behavior: none;
+  /* overscroll-behavior: none; */
   
 `;
 
@@ -52,8 +52,8 @@ display:flex;
 justify-content:center;
 
 .copy{
-position:relative;
-top:100px;
+/* position:relative;
+top:150px; */
 }
 `
 
@@ -76,12 +76,12 @@ const home = () => {
     </Container>
     )}
 
-   <Test>
+{/*    <Test>
           <h3 className="copy">  &copy;  
            2024 Deimov
           </h3>
    </Test>
- 
+  */}
    
 
     </>

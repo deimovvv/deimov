@@ -7,9 +7,10 @@ color: white;
  display: flex;
  justify-content: center;
  align-items: flex-end;
-margin-top: 0px;
-
-bottom: 0;
+ position:relative;
+ z-index:30;
+ bottom: 0%;
+ padding:1rem;
 
 
 {
@@ -25,7 +26,7 @@ bottom: 0;
   }
 
   @media (max-width: 768px) {
-   display:none;
+
 
   } 
 `
