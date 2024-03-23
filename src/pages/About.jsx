@@ -10,7 +10,7 @@ max-width: 1000px; /* Ancho máximo del contenedor */
 margin: 0 auto; /* Centra el contenedor horizontalmente */
 padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
 position: relative;
-height: 100vh;
+height: 90vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -21,6 +21,9 @@ height: 100vh;
 
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
+    height: 90vh;
+    align-items: start
+    padding-bottom: 35px;
   } 
 
   
@@ -32,13 +35,22 @@ width: 100%; /* Ocupa el 100% del ancho del contenedor */
   max-width: 400px; /* Ancho máximo de la imagen */
   height: auto; /* Altura automática para mantener la proporción */
   transition: 0.5s;
-  object-fit: cover;
   transition: 0.5s;
   object-fit: cover
 
   :hover {
     transform: scale(1.02);
+   
   }
+
+
+  @media (max-width: 700px) {
+    height: 300px;
+    width: 300px;
+
+  object-fit: cover
+
+  } 
 
   
 `;
@@ -46,6 +58,12 @@ width: 100%; /* Ocupa el 100% del ancho del contenedor */
 const Description = styled.div`
   display: grid;
   gap: 10px;
+
+  @media (max-width: 700px) {
+    gap: 0px;
+
+  } 
+
 
 `;
 

@@ -5,13 +5,13 @@ import Footer from '../components/layout/Footer';
 
 const Section = styled.section`
    
-height: 75vh;
+min-height: 75vh; 
 /* background-color: rgba(0,0,0,0.33); */
-overflow: hidden;
+overflow-Y: hidden;
 display: flex;
 justify-content: space-around;
 align-items: center;
-z-index: 2;
+
 position: relative;
 
    .div{
@@ -30,6 +30,8 @@ const MediaContainer = styled.div`
 display: flex;
 justify-content: center;
 justify-items:center;
+
+
 
 `
 

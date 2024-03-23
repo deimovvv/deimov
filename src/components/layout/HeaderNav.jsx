@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Header = styled.div`
   max-width:100%;
-  height: 132px;
+  /* height: 132px; */
   background: transparent;
 
   @media only screen and (max-width: 600px) {
@@ -20,7 +20,7 @@ const Header = styled.div`
 `;
 
 const Wrapper = styled.div`
-padding: 20px 20px;
+padding: 10px 20px;
 display: flex;
 flex: 2 1 auto;
 align-items: flex-end;

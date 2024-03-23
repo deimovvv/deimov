@@ -16,6 +16,7 @@ import Copy from "../pages/Copy";
 
 const Content = styled.section`
   flex: 1;
+  margin-top: 50px;
 `;
 
 const Layout = styled.div`
@@ -23,7 +24,7 @@ const Layout = styled.div`
   flex-direction: column;
   min-height: calc(100% - 5rem);
   position:relative;
-  margin-top: 10px;
+  
 
 
 `;
