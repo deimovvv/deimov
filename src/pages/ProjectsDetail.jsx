@@ -249,7 +249,7 @@ const ProjectsDetail = () => {
     {isLoading ? (<LoaderDeimov/>) : (<SectionMain>
       <Section id="project-section">
         <IMGContainer>
-          <IMG src={projectURL} />
+          <IMG src={`/assets/projectimages/${project.id}.jpg`} />
         </IMGContainer>
 
         <SectionDescription>

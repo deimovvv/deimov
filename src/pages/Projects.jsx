@@ -90,7 +90,7 @@ const projects = () => {
   return (
  
       <>
-        <h3 className="titleProyects">Selected Projects</h3>
+        <h3 className="titleProyects">Selecteddd Projects</h3>
           
           <Filter className="prueba" >   
           {categories.map(category => (
