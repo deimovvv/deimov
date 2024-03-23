@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from "styled-components";
 import Footer from '../components/layout/Footer';
+import LoaderDeimov from '../components/layout/LoaderDeimov';
 import MusicList from '../components/Music/MusicList';
 
 
@@ -30,18 +31,27 @@ font-size: 1.1rem;
 
 const Music = () => {
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 1000); // Simula el tiempo de carga de la página
+  });
+
+
+
 
 
   return (
     <>
-    <Projects>
+    {isLoading ? (<LoaderDeimov/> ) : (  <Projects>
         <Title>
          
         </Title>
 
         <MusicList category={"music"}/>
        
-    </Projects>
+    </Projects>) }
+  
     
 </>
   )

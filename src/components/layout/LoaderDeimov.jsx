@@ -7,8 +7,9 @@ const Div = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-/*   background-color: rgba(0, 0, 0, 0.9); */
+  height: 80vh;
+  /* background-color: rgba(0, 0, 0, 1); */
+ 
 `;
 
 const LoaderDeimov = () => {

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams,  useNavigate } from "react-router-dom";
 import getProjectByid from "../helpers/getProjectByid";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
+import LoaderDeimov from "../components/layout/LoaderDeimov";
 
 const SectionMain = styled.div`
 max-width:100%;
@@ -226,9 +227,26 @@ const ProjectsDetail = () => {
     navigate(-1); // Navega hacia atrás
   };
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 1000); // Simula el tiempo de carga de la página
+  });
+
+
+  if (!project || Object.keys(project).length === 0) {
+    // Opción 1: Redirigir
+    // navigate('/some/path');
+
+    // Opción 2: Mostrar un mensaje simple (este ejemplo seguirá mostrando el layout base de la página).
+    return <div>Project not found</div>;
+  }
+
+
 
   return (
-    <SectionMain>
+    <> 
+    {isLoading ? (<LoaderDeimov/>) : (<SectionMain>
       <Section id="project-section">
         <IMGContainer>
           <IMG src={projectURL} />
@@ -295,7 +313,9 @@ const ProjectsDetail = () => {
            </Back>
         </SectionVideo>
       ) : null}
-    </SectionMain>
+    </SectionMain>)}
+    
+    </>
   );
 };
 

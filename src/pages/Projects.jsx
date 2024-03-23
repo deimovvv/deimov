@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ProjectList from "../components/Projects/ProjectList";
 import styled from "styled-components";
+import LoaderDeimov from "../components/layout/LoaderDeimov";
 
 const Container = styled.div`
 
@@ -78,13 +79,18 @@ const projects = () => {
    // Tu lista de categorías
    const categories = ['All', 'Web', 'VR', '3D & Environment', 'Media'];
 
+   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 1000); // Simula el tiempo de carga de la página
+  });
+
 
 
   return (
  
       <>
-
-          <h3 className="titleProyects">Selected Projects</h3>
+        <h3 className="titleProyects">Selected Projects</h3>
           
           <Filter className="prueba" >   
           {categories.map(category => (
@@ -102,9 +108,7 @@ const projects = () => {
           <Container>
           <ProjectList  category={selectedCategory === 'All' ? '' : selectedCategory}/>
           </Container>
-
-
-
+        
         
       </>
  
