@@ -1,7 +1,7 @@
-import React from "react";
-import { Route, Routes, useLocation, useParams } from "react-router";
+import React, { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router";
 import Home from "../components/Home"
-import Projects  from "../pages/Projects"
+import Projects from "../pages/Projects"
 import Music from "../pages/Music"
 import About from "../pages/About";
 import HeaderNav from '../components/layout/HeaderNav'
@@ -10,24 +10,13 @@ import Experience from ".././components/Experience/Experience";
 import styled from "styled-components";
 import "../css/style.css";
 import ProjectsDetail from "../pages/ProjectsDetail";
-import getProjectByid from "../helpers/getProjectByid";
 import Presskit from "../pages/Presskit";
 import Contact from "../pages/Contact";
 import Copy from "../pages/Copy";
 
 const Content = styled.section`
-flex: 1;
-
-
-`
-
-/* const Main = styled.main`
-display: flex;
-  flex: 1; 
-  flex-direction: column;
-  max-height:70vh;
-  
-`; */
+  flex: 1;
+`;
 
 const Layout = styled.div`
   display: flex;
@@ -38,63 +27,37 @@ const Layout = styled.div`
 
 `;
 
-
-
 const DeimovRouter = () => {
+  const location = useLocation();
+  const [shouldApplyOpacity, setShouldApplyOpacity] = useState(false);
 
-    const location = useLocation();
-    const { id } = useParams();
-
-
-
-    const routesWithOpacity = ['/projects', '/about', '/music', '/project', '/copy'];
-const shouldApplyOpacity = routesWithOpacity.some(route =>
-  location.pathname.includes(route)
-);
-  
-    // Verifica si la ubicación actual es una de las páginas que necesita opacidad
-   /*  const shouldApplyOpacity = ['/projects', '/about', '/music', '/project'].includes(
-      location.pathname.split('/')[1]
-    );
-     */
-    console.log('shouldApplyOpacity:', shouldApplyOpacity)
+  useEffect(() => {
+    const routesWithOpacity = ['/projects', '/about', '/music', '/project', '/copy',  '/contact'];
+    const hasOpacity = routesWithOpacity.some(route => location.pathname.includes(route));
+    setShouldApplyOpacity(hasOpacity);
+  }, [location]);
 
   return (
-    <div className={`layout ${shouldApplyOpacity ? 'opacity' : ''}`}>
-       <HeaderNav />
-        <div className="layoutChild" >
-
-    <Layout>  
-    {/* Header y Navegacion  */}
-   
-    <Experience/> 
-  
-     
-     {/* Contenido central */}
-  
-     <Content>
-
-      <Routes>
-        <Route exact path="/" element={<Home/>} />
-        <Route path="/projects" element={<Projects />} />
-        <Route exact path="/about" element={<About/>} />
-        <Route path="/music" element={<Music />} />
-        <Route path="/presskit" element={<Presskit/>} />
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/project/:id" element={<ProjectsDetail />} />
-        <Route path="/copy" element={<Copy />} />
-
-
-      </Routes>
-
-      </Content>
-     
-
-      {/* Footer */}
-     {/*  <Footer/> */}
-     
-      </Layout>
+    <div className={shouldApplyOpacity ? 'opacity' : ''}>
+      <HeaderNav />
+      <div className="layoutChild">
+        <Layout >
+          <Experience />
+          <Content>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route exact path="/about" element={<About />} />
+              <Route path="/music" element={<Music />} />
+              <Route path="/presskit" element={<Presskit />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/project/:id" element={<ProjectsDetail />} />
+              <Route path="/copy" element={<Copy />} />
+            </Routes>
+          </Content>
+        </Layout>
       </div>
+    
     </div>
   );
 };

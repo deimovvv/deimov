@@ -6,7 +6,8 @@ import Footer from '../components/layout/Footer';
 const Section = styled.section`
    
 height: 75vh;
-background-color: rgba(0,0,0,0.33);
+/* background-color: rgba(0,0,0,0.33); */
+overflow: hidden;
 display: flex;
 justify-content: space-around;
 align-items: center;

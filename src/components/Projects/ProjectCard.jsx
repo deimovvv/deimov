@@ -28,7 +28,7 @@ const TitleContainer = styled.div`
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.8s ease;
   transform: translateY(100%);
-  height: 50px;
+  height: 30px;
 
   ${Project}:hover & {
     opacity: 1;

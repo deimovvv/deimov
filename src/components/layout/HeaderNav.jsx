@@ -13,9 +13,14 @@ display: flex;
 flex: 2 1 auto;
 align-items: flex-end;
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 600px){
   padding: 20px 0px;
-  background-color: rgba(0,0,0,0.65);
+  
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.56) 100%,
+    rgba(0, 0, 0, 0.8505996148459384) 100%
+  );
 
 }
 `

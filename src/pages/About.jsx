@@ -10,6 +10,7 @@ max-width: 1000px; /* Ancho máximo del contenedor */
 margin: 0 auto; /* Centra el contenedor horizontalmente */
 padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
 position: relative;
+height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;

@@ -4,6 +4,9 @@ import styled from "styled-components";
 
 const Container = styled.div`
 
+
+
+
   margin-top: 50px;
   align-items: center;
 
@@ -57,7 +60,8 @@ font-size: 12px;
 
 :hover{
   
-  border-bottom: solid 0.2px;    
+  border-bottom: solid 0.1px; 
+  text-align: center;
 }
 
 
