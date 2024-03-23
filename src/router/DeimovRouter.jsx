@@ -23,6 +23,7 @@ const Layout = styled.div`
   flex-direction: column;
   min-height: calc(100% - 5rem);
   position:relative;
+  margin-top: 10px;
 
 
 `;

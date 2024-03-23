@@ -1,10 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 import styled from "styled-components";
 
 const Header = styled.div`
   max-width:100%;
   height: 132px;
+  background: transparent;
+
+  @media only screen and (max-width: 600px) {
+    padding: 10px 0px;
+    height: 60px;
+    background: ${props =>
+      props.isHome && props.isMobile
+        ? 'linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.85))'
+        : 'transparent'};
+   
+  }
+
 `;
 
 const Wrapper = styled.div`
@@ -13,16 +25,11 @@ display: flex;
 flex: 2 1 auto;
 align-items: flex-end;
 
-@media only screen and (max-width: 600px){
-  padding: 20px 0px;
-  
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.56) 100%,
-    rgba(0, 0, 0, 0.8505996148459384) 100%
-  );
 
-}
+@media only screen and (max-width: 600px) {
+    padding: 10px 0px;
+    
+  }
 `
 
 
@@ -81,12 +88,18 @@ color: whitesmoke;
 
 @media (max-width: 700px) {
   margin-top: 0px;
+  padding-left: 20px;
 }
 `
 
 const HeaderNav = () => {
+
+  const location = useLocation();
+  const isMobile = window.innerWidth <= 600;
+  const isHome = location.pathname === '/';
+
   return (
-    <Header>
+    <Header isMobile={isMobile} isHome={isHome}>
       <Wrapper>
         <Span>
           {" "}
