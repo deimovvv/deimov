@@ -22,7 +22,7 @@ const Content = styled.section`
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
- /*  min-height: calc(100% - 5rem); */
+  min-height: calc(100% - 5rem);
   position:relative;
   
 
