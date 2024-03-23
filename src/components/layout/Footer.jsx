@@ -10,10 +10,10 @@ color: white;
  position:relative;
  z-index:30;
  bottom: 0%;
- padding:1rem;
+
 
  @media (max-width: 700px) {
-  bottom: 105px;
+  bottom: 95px;
  
  } 
 
