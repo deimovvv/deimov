@@ -2,12 +2,17 @@ import React from 'react'
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Footer from '../components/layout/Footer';
+import { motion } from "framer-motion";
+
 
 const Section = styled.section`
    
-min-height: 75vh; 
-/* background-color: rgba(0,0,0,0.33); */
-overflow-Y: hidden;
+height: 80vh;
+background: linear-gradient(
+  0deg,
+  rgba(0, 0, 0, 0.56) 100%,
+  rgba(0, 0, 0, 0.8505996148459384) 100%
+);
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -53,6 +58,11 @@ top:100px;
 const contact = () => {
   return (
     <>
+    <motion.div
+      initial={{ y: 200, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0, ease: "circOut", duration: 1 }}
+    >
         <Section id="contact-section">
             <div>
                 <p> 
@@ -77,7 +87,8 @@ const contact = () => {
           
         </Section>
 
-        <Footer/>
+        {/* <Footer/> */}
+        </motion.div>
     </>
   )
 }

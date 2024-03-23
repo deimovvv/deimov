@@ -68,7 +68,7 @@ bottom: 0;
 
 .layoutChild{
 width: 95vw;
-height: 100vh;
+/* height: 100vh; */
 
 margin: 0px auto;
 }
