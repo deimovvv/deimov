@@ -21,7 +21,7 @@ height: 90vh;
 
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
-    height: 90vh;
+    height: 100vh;
     align-items: start
     padding-bottom: 35px;
   } 
