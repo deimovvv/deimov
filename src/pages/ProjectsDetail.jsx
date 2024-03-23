@@ -195,8 +195,8 @@ background-color: transparent;
 border: none;
 color: whitesmoke;
 cursor: pointer;
-margin-top: 5px;
-font-size: 12px;
+margin-top: 10px;
+font-size: 15px;
 
 
 :hover{
@@ -205,7 +205,7 @@ color: #cfcdcd;
 }
 
 @media screen and (max-width:320px) {
-margin-top: 18px;
+margin-top: 12px;
   left: 87%;
   font-size: 14px;
 
