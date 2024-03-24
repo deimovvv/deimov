@@ -221,7 +221,7 @@ const ProjectsDetail = () => {
   const navigate = useNavigate();
 
   const project = getProjectByid(id);
-  const projectURL = `/assets/projectimages/${project.id}.jpg`;
+  const projectURL = `/assets/${project.id}.jpg`;
 
   const handleBack = () => {
     navigate(-1); // Navega hacia atrás

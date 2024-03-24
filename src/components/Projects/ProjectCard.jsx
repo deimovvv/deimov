@@ -62,7 +62,7 @@ const ImageContainer = styled.div`
 `;
 
 const ProjectCard = ({ id, description, title }) => {
-  const projectURL = `/assets/projectimages/${id}.jpg`;
+  const projectURL = `/assets/${id}.jpg`;
 
   return (
     <motion.div
