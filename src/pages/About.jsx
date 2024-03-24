@@ -93,7 +93,7 @@ const about = () => {
       transition={{ delay: 0, ease: "circOut", duration: 1 }}
     >
       <Section id="about-section" className="animate__animated animate__fadeIn">
-        <Image src="/assets/projectimages/DeimovAI_WEB.jpg"></Image>
+        <Image src="/assets/DeimovAI_WEB.jpg"></Image>
 
         <Description>
           <H2>//</H2>

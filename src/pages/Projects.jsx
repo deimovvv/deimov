@@ -90,6 +90,8 @@ const projects = () => {
   return (
  
       <>
+      {isLoading ? <LoaderDeimov/> : (
+        <>
         <h3 className="titleProyects">Selecteddd Projects</h3>
           
           <Filter className="prueba" >   
@@ -108,7 +110,8 @@ const projects = () => {
           <Container>
           <ProjectList  category={selectedCategory === 'All' ? '' : selectedCategory}/>
           </Container>
-        
+          </>
+        )}
         
       </>
  

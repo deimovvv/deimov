@@ -13,6 +13,7 @@ import ProjectsDetail from "../pages/ProjectsDetail";
 import Presskit from "../pages/Presskit";
 import Contact from "../pages/Contact";
 import Copy from "../pages/Copy";
+import LoaderDeimov from "../components/layout/LoaderDeimov";
 
 const Content = styled.section`
   flex: 1;
@@ -39,7 +40,10 @@ const DeimovRouter = () => {
     setShouldApplyOpacity(hasOpacity);
   }, [location]);
 
+
   return (
+    <> 
+   
     <div className={shouldApplyOpacity ? 'opacity' : ''}>
       <HeaderNav />
       <div className="layoutChild">
@@ -61,6 +65,8 @@ const DeimovRouter = () => {
       </div>
     
     </div>
+    
+    </>
   );
 };
 

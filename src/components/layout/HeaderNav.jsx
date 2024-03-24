@@ -34,7 +34,7 @@ align-items: flex-end;
 
 
 const Nav = styled.nav`
-  z-index: 999999;
+  /* z-index: 999999; */
   flex: 1 1 auto;
   
   

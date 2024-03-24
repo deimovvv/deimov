@@ -2,13 +2,16 @@ import styled from "styled-components";
 import PuffLoader from "react-spinners/ClipLoader";
 
 const Div = styled.div`
-  text-align: center;
+position: fixed; /* Se posiciona fijo en la ventana */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1); /* Fondo semi-transparente */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 80vh;
-  /* background-color: rgba(0, 0, 0, 1); */
+  z-index: 999; /* Asegura que el loader aparezca encima de otros elementos */
  
 `;
 
