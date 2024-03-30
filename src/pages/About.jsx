@@ -104,9 +104,9 @@ const about = () => {
             learning, <br /> art, nature and most important, <br /> how they are
             interconnected. <br /> <br /> CO-FOUNDER of 
             <span>
-            <a href="https://coevoo.vercel.app/" target="blank">  Coevo Studio </a>
+            <a href="https://coevo-studio.com/" target="blank">  COEVO </a>
             </span> 
-            & Obsidian,{" "}
+            &   <a href="https://www.instagram.com/oxidian_/" target="blank">  OXIDIAN  </a>,{" "}
             <br />
             <br /> <br />
             His interdisciplinary specialization covers branches such as Dj,

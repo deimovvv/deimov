@@ -45,7 +45,7 @@ padding: 0;
 display: flex;
 background: linear-gradient(
   0deg,
-  rgba(0, 0, 0, 0.76) 100%,
+  rgba(0, 0, 0, 0.86) 100%,
   rgba(0, 0, 0, 0.8505996148459384) 100%
 );
 margin-top: 150px;
