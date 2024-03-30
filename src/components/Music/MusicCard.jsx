@@ -65,7 +65,7 @@ const MusicCard = ({ id, name, soundcloud, sello, spotify, youtube }) => {
     <motion.div
     initial={{ y: 200, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
-    transition={{ delay: 0, ease: "circOut", duration: 1 }}
+    transition={{ delay: 0, ease: "circOut", duration: 0.8 }}
   >
     <Container animate__animated animate__fadeIn>
       <div>

@@ -1,3 +1,5 @@
+precision mediump float;
+
 uniform float time;
 uniform float uDisplacement;
 uniform vec2 mousePosition; // Uniforme para la posición del mouse

@@ -4,6 +4,8 @@ import getProjectByid from "../helpers/getProjectByid";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
 import LoaderDeimov from "../components/layout/LoaderDeimov";
+import { motion } from "framer-motion";
+
 
 const SectionMain = styled.div`
 max-width:100%;
@@ -246,7 +248,12 @@ const ProjectsDetail = () => {
 
   return (
     <> 
-    {isLoading ? (<LoaderDeimov/>) : (<SectionMain>
+    {isLoading ? (<LoaderDeimov/>) : (
+     <motion.div
+     initial={{ y: 200, opacity: 0 }}
+     animate={{ y: 0, opacity: 1 }}
+     transition={{ delay: 0, ease: "circOut", duration: 0.8 }}
+   ><SectionMain>
       <Section id="project-section">
         <IMGContainer>
           <IMG src={`/assets/${project.id}.jpg`} />
@@ -313,7 +320,9 @@ const ProjectsDetail = () => {
            </Back>
         </SectionVideo>
       ) : null}
-    </SectionMain>)}
+    </SectionMain>
+    </motion.div>
+    )}
     
     </>
   );

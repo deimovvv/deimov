@@ -1,5 +1,7 @@
 // En tu archivo Background.js
 
+
+
 import React, { useRef } from "react";
 import { useFrame, extend } from "@react-three/fiber";
 import { shaderMaterial } from "@react-three/drei";
