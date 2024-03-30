@@ -12,10 +12,12 @@ const Header = styled.div`
     height: 60px;
     background: ${props =>
       props.isHome && props.isMobile
-        ? 'linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.85))'
+        ? 'linear-gradient(0deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.85))'
         : 'transparent'};
    
   }
+
+
 
 `;
 
