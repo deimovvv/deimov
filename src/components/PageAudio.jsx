@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import audioFile from "../assets/audio/Alva Noto, Ryuichi Sakamoto - Uoon I myfreemp3.vip .mp3";
+import audioFile from "/assets/audio/Alva Noto, Ryuichi Sakamoto - Uoon I myfreemp3.vip .mp3";
 import styled from "styled-components";
 
 const LoaderAudio = styled.div`

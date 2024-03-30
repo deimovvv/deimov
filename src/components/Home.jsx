@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Footer from "./layout/Footer";
 import LoaderDeimov from "./layout/LoaderDeimov";
 import { motion } from "framer-motion";
+import PageWithAudio from "./PageAudio";
 
 
 const Container = styled.div`
@@ -91,6 +92,7 @@ const home = () => {
 
 
   <Footer/>
+  <PageWithAudio/>
  
 
     </>
