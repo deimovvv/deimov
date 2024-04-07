@@ -92,7 +92,7 @@ const home = () => {
 
 
   <Footer/>
-  <PageWithAudio/>
+ {/*  <PageWithAudio/> */}
  
 
     </>
