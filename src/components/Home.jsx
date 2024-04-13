@@ -83,7 +83,7 @@ const home = () => {
     >
       <Container>
         <TitleContainer>
-      <Title>Welcome to Deimov Ecosystem</Title>
+      <Title>Deimov Ecosystem</Title>
     </TitleContainer>  
    
     </Container>
