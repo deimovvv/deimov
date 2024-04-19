@@ -5,7 +5,7 @@ import "./css/style.css";
 function App() {
   return (
     <>
-      <DeimovRouter />
+      <DeimovRouter/>
 
     </>
   );
