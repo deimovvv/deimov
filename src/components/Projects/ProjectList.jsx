@@ -12,6 +12,11 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 
 
+@media (max-width: 320px) {
+    /* Cambiar a una sola columna en dispositivos más pequeños */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+  }
+
 `
 
 
