@@ -12,7 +12,8 @@
          'title': 'Virtual Reality for Party',
          'role': 'Freelancer',
          'description': `Virtual Reality Experience we made for party.`,
-         'video': 'https://www.youtube.com/watch?v=f3XfhRqPN7I'
+         'video': 'https://www.youtube.com/watch?v=f3XfhRqPN7I',
+         'youtubeID': 'f3XfhRqPN7I'
     },
     {
         'id': 'evolvara',

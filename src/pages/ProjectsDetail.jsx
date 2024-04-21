@@ -5,6 +5,7 @@ import styled from "styled-components";
 import ReactPlayer from "react-player";
 import LoaderDeimov from "../components/layout/LoaderDeimov";
 import { motion } from "framer-motion";
+import YouTube from "react-youtube";
 
 
 const SectionMain = styled.div`
@@ -311,6 +312,13 @@ const ProjectsDetail = () => {
             width="100%"
             height="500px"
           /> */}
+          <YouTube
+      videoId={project.youtubeID} // El ID del video de YouTube que deseas reproducir
+      opts={{ 
+        width: "100%", // Ancho del reproductor de video
+        height: "500px" // Altura del reproductor de video
+      }}
+    />
             <Back onClick={handleBack}>
            
            <box-icon

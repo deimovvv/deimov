@@ -13,8 +13,6 @@ import ProjectsDetail from "../pages/ProjectsDetail";
 import Presskit from "../pages/Presskit";
 import Contact from "../pages/Contact";
 import Copy from "../pages/Copy";
-import LoaderDeimov from "../components/layout/LoaderDeimov";
-import Detail from "../pages/Detail";
 
 const Content = styled.section`
   flex: 1;
