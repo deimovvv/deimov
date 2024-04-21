@@ -318,7 +318,7 @@ const Detail = () => {
     </motion.div>
    */}
 
-   
+
     <motion.div
      initial={{ y: 200, opacity: 0 }}
      animate={{ y: 0, opacity: 1 }}
@@ -327,6 +327,31 @@ const Detail = () => {
 
    <div> {project.id}  </div>
    <h2>  {project.description} </h2>
+
+   <SectionVideo>
+          <ReactPlayer
+            className="video"
+            url={project.video}
+            controls
+            loop
+            width="100%"
+            height="500px"
+          />
+            <Back onClick={handleBack}>
+           
+           <box-icon
+             className="flecha"
+             animation="flashing"
+             name="left-arrow-alt"
+             flip="vertical"
+             color="#ffffff"
+           ></box-icon>
+
+            <ButtonBack > BACK </ButtonBack>
+
+           </Back>
+        </SectionVideo>
+    
 
    </motion.div>
 
