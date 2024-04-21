@@ -230,11 +230,11 @@ const Detail = () => {
     navigate(-1); // Navega hacia atrás
   };
 
-  const [isLoading, setIsLoading] = useState(true);
+  /* const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => setIsLoading(false), 1000); // Simula el tiempo de carga de la página
-  });
+  }); */
 
 
 
@@ -242,7 +242,7 @@ const Detail = () => {
 
   return (
     <> 
-    {isLoading ? (<LoaderDeimov/>) : (
+
      <motion.div
      initial={{ y: 200, opacity: 0 }}
      animate={{ y: 0, opacity: 1 }}
@@ -316,7 +316,7 @@ const Detail = () => {
       ) : null}
     </SectionMain>
     </motion.div>
-    )}
+  
     
     </>
   )
