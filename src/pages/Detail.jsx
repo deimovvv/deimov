@@ -318,8 +318,18 @@ const Detail = () => {
     </motion.div>
    */}
 
+   
+    <motion.div
+     initial={{ y: 200, opacity: 0 }}
+     animate={{ y: 0, opacity: 1 }}
+     transition={{ delay: 0, ease: "circOut", duration: 0.8 }}
+   >
+
    <div> {project.id}  </div>
    <h2>  {project.description} </h2>
+
+   </motion.div>
+
     
     </>
   )
