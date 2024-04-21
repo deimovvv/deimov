@@ -242,7 +242,7 @@ const Detail = () => {
 
   return (
     <> 
-
+{/* 
      <motion.div
      initial={{ y: 200, opacity: 0 }}
      animate={{ y: 0, opacity: 1 }}
@@ -316,7 +316,10 @@ const Detail = () => {
       ) : null}
     </SectionMain>
     </motion.div>
-  
+   */}
+
+   <div> {project.id}  </div>
+   <h2>  {project.description} </h2>
     
     </>
   )
