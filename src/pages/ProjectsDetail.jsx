@@ -57,8 +57,7 @@ max-width: 100%;
   }
 
   @media screen and (max-width: 320px){
-  width: 400px;
-  height: 440px;
+    max-width: 90%;
   }
  
 `;
@@ -142,6 +141,11 @@ const SectionImagenes = styled.section`
   max-width: 100%;
   height: auto;
   gap: 0;
+
+  @media (max-width: 320px) {
+    /* Cambiar a una sola columna en dispositivos más pequeños */
+    grid-template-columns: 1fr;
+  }
 `;
 
 const IMG2 = styled.img`

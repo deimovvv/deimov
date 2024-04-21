@@ -42,9 +42,9 @@
          'title': 'Website for Company',
          'role': 'Freelancer',
          'video': 'https://www.youtube.com/watch?v=T0IFN-n-8ps',
-         'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).,
+         'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).`,
          'youtubeID': 'pUe8FA5ncso'
-         `
+         
     },
     {
         'id': 'pcg',
