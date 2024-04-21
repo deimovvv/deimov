@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Link, useParams,  useNavigate } from "react-router-dom";
 import getProjectByid from "../helpers/getProjectByid";
 import styled from "styled-components";
-import ReactPlayer from "react-player";
+/* import ReactPlayer from "react-player"; */
 import LoaderDeimov from "../components/layout/LoaderDeimov";
 import { motion } from "framer-motion";
 import YouTube from "react-youtube";
