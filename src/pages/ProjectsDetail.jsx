@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link, useParams,  useNavigate } from "react-router-dom";
 import getProjectByid from "../helpers/getProjectByid";
 import styled from "styled-components";
@@ -220,10 +220,16 @@ margin-top: 12px;
 const ProjectsDetail = () => {
   const { id } = useParams();
 
+
+
+ 
   const navigate = useNavigate();
 
-  const project = getProjectByid(id);
-  const projectURL = `/assets/${project.id}.jpg`;
+  /* const project = getProjectByid(id); */
+  const project = useMemo( () => getProjectByid( id ), [ id ]); 
+
+  console.log('check',id);
+
 
   const handleBack = () => {
     navigate(-1); // Navega hacia atrás
@@ -259,7 +265,7 @@ const ProjectsDetail = () => {
           <IMG src={`/assets/${project.id}.jpg`} />
         </IMGContainer>
 
-        <SectionDescription>
+        <SectionDescription> 
           <H2>//</H2>
           <hr />
           <Span>{project.description}</Span>

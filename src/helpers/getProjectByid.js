@@ -1,10 +1,13 @@
-import projectsData from '../data/projectsData'
+import  projectsData from '../data/projectsData'
+
 
 
 const getProjectByid = (id) => {
 
     /* return projectsData.find(project => project.id === id) */
-    return projectsData.find(project => project.id === id) || {};
+    return projectsData.find(project => project.id === id)
+
+
 
 
 }
