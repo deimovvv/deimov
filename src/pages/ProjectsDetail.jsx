@@ -228,7 +228,7 @@ const ProjectsDetail = () => {
   /* const project = getProjectByid(id); */
   const project = useMemo( () => getProjectByid( id ), [ id ]); 
 
-  console.log('check',id);
+ 
 
 
   const handleBack = () => {

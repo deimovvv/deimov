@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { useParams } from 'react-router';
+import getProjectByid from '../helpers/getProjectByid';
 
 const Detail = () => {
 
   const { id } = useParams();
 
-  
+  const project = useMemo( () => getProjectByid( id ), [ id ]); 
+
+
+
 
 
   return (
-    <div>Detail</div>
+    <div>  {project.id} {project.description} </div>
   )
 }
 

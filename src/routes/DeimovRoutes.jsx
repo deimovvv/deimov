@@ -14,6 +14,7 @@ import Presskit from "../pages/Presskit";
 import Contact from "../pages/Contact";
 import Copy from "../pages/Copy";
 import LoaderDeimov from "../components/layout/LoaderDeimov";
+import Detail from "../pages/Detail";
 
 const Content = styled.section`
   flex: 1;
@@ -57,7 +58,8 @@ const DeimovRouter = () => {
               <Route path="/music" element={<Music />} />
               <Route path="/presskit" element={<Presskit />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/project/:id" element={<ProjectsDetail />} />
+              <Route path="/project/:id" element={<Detail />} />
+
               <Route path="/copy" element={<Copy />} />
             </Routes>
           </Content>
