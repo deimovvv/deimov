@@ -2,7 +2,7 @@ import React from 'react'
 
 const Presskit = () => {
   return (
-    <div>Presskit</div>
+    <div>Deimov is an artist </div>
   )
 }
 

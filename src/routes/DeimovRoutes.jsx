@@ -35,7 +35,7 @@ const DeimovRouter = () => {
   const [shouldApplyOpacity, setShouldApplyOpacity] = useState(false);
 
   useEffect(() => {
-    const routesWithOpacity = ['/projects', '/about', '/music', '/project', '/copy',  ];
+    const routesWithOpacity = ['/projects', '/about', '/music', '/project', '/copy',  'presskit' ];
     const hasOpacity = routesWithOpacity.some(route => location.pathname.includes(route));
     setShouldApplyOpacity(hasOpacity);
   }, [location]);
