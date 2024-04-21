@@ -303,14 +303,14 @@ const ProjectsDetail = () => {
 
       {project.video ? (
         <SectionVideo>
-          <ReactPlayer
+         {/*  <ReactPlayer
             className="video"
             url={project.video}
             controls
             loop
             width="100%"
             height="500px"
-          />
+          /> */}
             <Back onClick={handleBack}>
            
            <box-icon

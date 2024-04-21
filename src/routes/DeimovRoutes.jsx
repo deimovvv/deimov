@@ -58,7 +58,7 @@ const DeimovRouter = () => {
               <Route path="/music" element={<Music />} />
               <Route path="/presskit" element={<Presskit />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/project/:id" element={<Detail />} />
+              <Route path="/project/:id" element={<ProjectsDetail />} />
 
               <Route path="/copy" element={<Copy />} />
             </Routes>
