@@ -8,7 +8,9 @@ const Container = styled.div`
 max-width:1500px;
 margin:auto;
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+/* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) */
+grid-template-columns: repeat(3, 1fr);
+
 
 `
 

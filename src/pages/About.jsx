@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components"; 
 import { motion } from "framer-motion";
+import LoaderDeimov from "../components/layout/LoaderDeimov";
 
 
 const Section = styled.section`
@@ -85,8 +86,17 @@ const Span = styled.p`
 
 
 const about = () => {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 500); // Simula el tiempo de carga de la página
+  });
+
   return (
     <>
+     
+      {isLoading ? <LoaderDeimov/> : (
    <motion.div
       initial={{ y: 200, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -118,6 +128,7 @@ const about = () => {
         </Description>
       </Section>
       </motion.div>
+     )}
     </>
 
   );

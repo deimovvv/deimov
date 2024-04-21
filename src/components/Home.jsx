@@ -24,7 +24,7 @@ overflow-y: hidden;
 const Title = styled.span`
   color: #c5c5c5;
   
-font-size: clamp(1.9rem,1.5vw, 2.3rem);
+font-size: clamp(2.5rem,1.5vw, 2.3rem);
 
   text-align: center;
  padding: 10px 5px;
@@ -44,11 +44,11 @@ const TitleContainer = styled.div`
 max-width: 800px; 
 padding: 0; 
 display: flex;
-background: linear-gradient(
+/* background: linear-gradient(
   0deg,
   rgba(0, 0, 0, 0.90) 100%,
   rgba(0, 0, 0, 0.8505996148459384) 100%
-);
+); */
 margin-top: 150px;
 height: 100px;
 flex-direction: row;
