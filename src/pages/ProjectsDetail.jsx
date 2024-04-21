@@ -313,6 +313,7 @@ const ProjectsDetail = () => {
             height="500px"
           /> */}
           <YouTube
+            className="video"
       videoId={project.youtubeID} // El ID del video de YouTube que deseas reproducir
       opts={{ 
         width: "100%", // Ancho del reproductor de video

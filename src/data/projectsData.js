@@ -25,7 +25,9 @@
          'title': 'Environment & Character',
          'role': 'Freelancer',
          'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).`,
-         'video': 'https://www.youtube.com/watch?v=Dt0Ucp6wbUk'
+         'video': 'https://www.youtube.com/watch?v=Dt0Ucp6wbUk',
+         'youtubeID': 'Dt0Ucp6wbUk',
+         
          
     },
     
@@ -40,7 +42,9 @@
          'title': 'Website for Company',
          'role': 'Freelancer',
          'video': 'https://www.youtube.com/watch?v=T0IFN-n-8ps',
-         'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).`
+         'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).,
+         'youtubeID': 'pUe8FA5ncso'
+         `
     },
     {
         'id': 'pcg',
@@ -53,6 +57,8 @@
          'role': 'Freelancer',
          'description': 'Experimentation with Procedural Content Generation',
          'video': 'https://www.youtube.com/watch?v=T0IFN-n-8ps',
+         'youtubeID': 'T0IFN-n-8ps'
+
 
     },
 
@@ -68,7 +74,8 @@
          'description': 'Virtual Reality for Party',
          'video': 'https://www.youtube.com/watch?v=pUe8FA5ncso',
          'image': '/assets/Roterton1.jpg',
-         'image2': '/assets/roterton2.jpg'
+         'image2': '/assets/roterton2.jpg',
+         'youtubeID': 'pUe8FA5ncso'
 
     },
 
@@ -82,7 +89,9 @@
          'title': 'Landscape',
          'role': 'Freelancer',
          'description': '',
-         'video': 'https://www.youtube.com/watch?v=iHV8JBfzrTg'
+         'video': 'https://www.youtube.com/watch?v=iHV8JBfzrTg',
+         'youtubeID': 'iHV8JBfzrTg'
+         
 
     },
 
