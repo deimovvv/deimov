@@ -7,7 +7,7 @@
         'name': 'Virtual Reality',
         'date': '2024',
         'client': '999 ciclo',
-         'technologies': 'React & React Three Fiber',
+         'technologies': 'Unreal Engine, Substance Painter & Adobe Premiere',
          'category': 'VR',
          'title': 'Virtual Reality for Party',
          'role': 'Freelancer',
@@ -20,11 +20,14 @@
         'name': 'Virtual Reality',
         'date': '2023',
         'client': 'Coevo',
-         'technologies': 'React & React Three Fiber',
+         'technologies': 'Unreal Engine 5.2, Adobe Premiere',
          'category': '3D & Environment',
          'title': 'Environment & Character',
          'role': 'Freelancer',
-         'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).`,
+         'description': `In the ecstasy of gaseous resurrection, Evolvara, resplendent with aquatic tones and warm solar reflections, is now a visual testament to the vital connection between celestial elements. Linked with the very essence of the sun and water,
+         Evolvara generates oxygen in a celestial choreography, encapsulating cosmic resilience as it flourishes in the perpetual interconnectedness of the universe.
+         `,
+         'projectDescription': 'it is a personal project that aimed to push my Environment & Tech skills. ',
          'video': 'https://www.youtube.com/watch?v=Dt0Ucp6wbUk',
          'youtubeID': 'Dt0Ucp6wbUk',
          
@@ -43,7 +46,7 @@
          'role': 'Freelancer',
          'video': 'https://www.youtube.com/watch?v=T0IFN-n-8ps',
          'description': `Web development and design for Coevo Studio, The website was developed utilizing React Three Fiber (Three.js & React).`,
-         'youtubeID': 'pUe8FA5ncso'
+         'youtubeID': 'Xh3YJrrOx14'
          
     },
     {
@@ -84,11 +87,11 @@
         'name': 'Art',
          'date': '2022',
          'client': 'Deimov',
-         'technologies': 'Stable Diffusion & Touch Designer',
+         'technologies': 'Unreal Engine 5.1',
          'category': '3D & Environment',
          'title': 'Landscape',
          'role': 'Freelancer',
-         'description': '',
+         'description': 'Realistic Environment using Megascans assets',
          'video': 'https://www.youtube.com/watch?v=iHV8JBfzrTg',
          'youtubeID': 'iHV8JBfzrTg'
          

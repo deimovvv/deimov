@@ -8,7 +8,7 @@ const Header = styled.div`
   background: transparent;
 
   @media only screen and (max-width: 600px) {
-    padding: 10px 0px;
+    padding: 10px 10px;
     height: 60px;
     background: ${props =>
       props.isHome && props.isMobile

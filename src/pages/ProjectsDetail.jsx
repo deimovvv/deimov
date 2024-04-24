@@ -15,10 +15,7 @@ max-width:100%;
   flex-direction: column;
   align-items: center; /* Centra el contenido verticalmente */
 
-  @media only screen and (max-width: 320px){
-    
-  }
-  
+
 `;
 
 const Section = styled.section`
@@ -56,8 +53,12 @@ max-width: 100%;
     transform: scale(1.02);
   }
 
-  @media screen and (max-width: 320px){
-    max-width: 90%;
+  @media screen and (max-width: 430px){
+    max-width: 92.5%;
+
+    width: 400px;
+  height: 430px;
+
   }
  
 `;
@@ -69,9 +70,10 @@ max-width:100%;
 @media (max-width: 768px) {
   
 } 
-/* @media screen and (max-width: 320px){
-  width: 400px;
-  } */
+ 
+
+
+}
 
   .link {
     font-weight: 150;
@@ -91,7 +93,7 @@ max-width:100%;
     display: flex;
     padding-top: 10px;
     justify-content:space-between;
-   /*  padding-right:50px; */
+   
 
     @media (max-width: 912px) {
       padding-right:90px;
@@ -99,6 +101,7 @@ max-width:100%;
     } 
   @media (max-width: 768px) {
     padding-right:170px;
+    width: 90%;
 
   } 
   @media (max-width: 412px) {
@@ -110,7 +113,7 @@ max-width:100%;
 
   span {
     font-weight: 250;
-    color: #c2c2c2;
+    color: #c2c2c2; 
   }
 
   h3 {
@@ -119,30 +122,54 @@ max-width:100%;
     display: inline;
     color: whitesmoke;
   }
+
+
 `;
 
 const H2 = styled.h2`
   color: whitesmoke;
   font-weight: 150;
   text-align: center;
+
+  @media (max-width: 600px) {
+    /* Cambiar a una sola columna en dispositivos más pequeños */
+    display: none;
+  }
 `;
+
+const HR = styled.hr`
+
+@media (max-width: 600px) {
+    /* Cambiar a una sola columna en dispositivos más pequeños */
+    display: none;
+  }
+
+`
 
 const Span = styled.p`
   color: whitesmoke;
   font-weight: 150;
   width: 600px;
+  padding-top: 15px;
+
+  @media (max-width: 600px) {
+    /* Cambiar a una sola columna en dispositivos más pequeños */
+    width: 92%;
+  }
+
 `;
 
 const SectionImagenes = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   max-width: 100%;
   height: auto;
-  gap: 0;
+  
 
-  @media (max-width: 320px) {
+  @media (max-width: 600px) {
     /* Cambiar a una sola columna en dispositivos más pequeños */
     grid-template-columns: 1fr;
   }
@@ -154,9 +181,13 @@ const IMG2 = styled.img`
   padding-bottom: 5px;
   transition: 0.5s;
 
-  :hover {
-    transform: scale(1.02);
+  @media (max-width: 600px) {
+    /* Cambiar a una sola columna en dispositivos más pequeños */
+    width: 400px;
+  height: 330px;
   }
+
+
 `;
 
 const SectionVideo = styled.section`
@@ -272,8 +303,10 @@ const ProjectsDetail = () => {
 
         <SectionDescription> 
           <H2>//</H2>
-          <hr />
+          <HR />
           <Span>{project.description}</Span>
+          <br />
+          <h3 > {project.projectDescription} </h3>
 
           {project.url ? (
             <Link target="_blank" className="link" to={project.url}>
@@ -306,16 +339,15 @@ const ProjectsDetail = () => {
         </SectionImagenes>
       ) : null}
 
+{project.image3 && project.image4 ? (
+        <SectionImagenes>
+          <IMG2 src={project.image3} />
+          <IMG2 src={project.image4} />
+        </SectionImagenes>
+      ) : null}
+
       {project.video ? (
         <SectionVideo>
-         {/*  <ReactPlayer
-            className="video"
-            url={project.video}
-            controls
-            loop
-            width="100%"
-            height="500px"
-          /> */}
           <YouTube
             className="video"
       videoId={project.youtubeID} // El ID del video de YouTube que deseas reproducir

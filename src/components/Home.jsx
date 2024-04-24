@@ -22,16 +22,16 @@ overflow-y: hidden;
 
 
 const Title = styled.span`
-  color: #c5c5c5;
+  color: #e3e2e2;
   
-font-size: clamp(2.5rem,1.5vw, 2.3rem);
+font-size: clamp(3.5rem,1.5vw, 2.3rem);
 
   text-align: center;
  padding: 10px 5px;
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
- font-weight: 100;
+ font-weight: 300;
 
 
   @media only screen and (max-width: 320px){
