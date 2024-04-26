@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components"; 
+import styled from "styled-components";
 import { motion } from "framer-motion";
 import LoaderDeimov from "../components/layout/LoaderDeimov";
-
 
 const Section = styled.section`
 
@@ -62,12 +61,8 @@ const Description = styled.div`
 
   @media (max-width: 700px) {
     gap: 0px;
-
-  } 
-
-
+  }
 `;
-
 
 const H2 = styled.h2`
   color: whitesmoke;
@@ -82,11 +77,7 @@ const Span = styled.p`
   /* text-align: center; */
 `;
 
-
-
-
 const about = () => {
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -95,42 +86,50 @@ const about = () => {
 
   return (
     <>
-     
-      {isLoading ? <LoaderDeimov/> : (
-   <motion.div
-      initial={{ y: 200, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0, ease: "circOut", duration: 1 }}
-    >
-      <Section id="about-section" className="animate__animated animate__fadeIn">
-        <Image src="/assets/DeimovAI_WEB.jpg"></Image>
+      {isLoading ? (
+        <LoaderDeimov />
+      ) : (
+        <motion.div
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0, ease: "circOut", duration: 1 }}
+        >
+          <Section
+            id="about-section"
+            className="animate__animated animate__fadeIn"
+          >
+            <Image src="/assets/DeimovAI_WEB.jpg"></Image>
 
-        <Description>
-          <H2>//</H2>
-        
-          <br />
-          <Span>
-            Gonzalo Cortez aka Deimov <br /> is a Systemic Thinker lover of
-            learning, <br /> art, nature and most important, <br /> how they are
-            interconnected. <br /> <br /> CO-FOUNDER of 
-            <span>
-            <a href="https://coevo-studio.com/" target="blank">  COEVO </a>
-            </span> 
-            &   <a href="https://www.instagram.com/oxidian_/" target="blank">  OXIDIAN  </a>,{" "}
-            <br />
-            <br /> <br />
-            His interdisciplinary specialization covers branches such as Dj,
-            Producer, Sound Design, Environment & Code Art, Virtual Reality, Web
-            Development, User Experience, Marketing Analyst.
-          </Span>
-        
-         
-        </Description>
-      </Section>
-      </motion.div>
-     )}
+            <Description>
+              <H2>//</H2>
+
+              <br />
+              <Span>
+                Gonzalo Cortez aka Deimov <br /> is a Systemic Thinker lover of
+                learning, <br /> art, nature and most important, <br /> how they
+                are interconnected. <br /> <br /> CO-FOUNDER of
+                <span>
+                  <a href="https://coevo-studio.com/" target="blank">
+                    {" "}
+                    COEVO{" "}
+                  </a>
+                </span>
+                &{" "}
+                <a href="https://www.instagram.com/oxidian_/" target="blank">
+                  {" "}
+                  OXIDIAN{" "}
+                </a>
+                , <br />
+                <br /> <br />
+                His interdisciplinary expertise spans areas including DJing,
+                Music Production, Sound design, Environment & Code Art,
+                Virtual Reality, Web Development, User Experience, Real time technologies.
+              </Span>
+            </Description>
+          </Section>
+        </motion.div>
+      )}
     </>
-
   );
 };
 

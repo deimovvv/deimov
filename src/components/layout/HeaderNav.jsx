@@ -5,6 +5,8 @@ import styled from "styled-components";
 const Header = styled.div`
   max-width:100%;
   /* height: 132px; */
+
+
   background: transparent;
 
   @media only screen and (max-width: 600px) {
@@ -36,7 +38,7 @@ align-items: flex-end;
 
 
 const Nav = styled.nav`
-  /* z-index: 999999; */
+  z-index: 999999;
   flex: 1 1 auto;
   
   
@@ -87,6 +89,7 @@ const Li = styled.li`
 const Span = styled.span`
 margin-top: 15px;
 color: whitesmoke;
+z-index: 999999;
 
 @media (max-width: 700px) {
   margin-top: 0px;

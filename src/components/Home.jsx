@@ -4,6 +4,7 @@ import Footer from "./layout/Footer";
 import LoaderDeimov from "./layout/LoaderDeimov";
 import { motion } from "framer-motion";
 import PageWithAudio from "./PageAudio";
+import HeaderNav from "./layout/HeaderNav";
 
 
 const Container = styled.div`
@@ -81,9 +82,11 @@ const home = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0, ease: "circOut", duration: 1 }}
     >
+
+   
       <Container>
         <TitleContainer>
-      <Title>Deimov Ecosystem</Title>
+      <Title></Title>
     </TitleContainer>  
    
     </Container>

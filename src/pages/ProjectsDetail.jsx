@@ -85,6 +85,11 @@ max-width:100%;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 600px) {
+      padding-top: 10px;
+  
+} 
    
 
   }
@@ -101,9 +106,11 @@ max-width:100%;
     } 
   @media (max-width: 768px) {
     padding-right:170px;
-    width: 90%;
+    width: 98%;
+    padding-top: 5px;
 
   } 
+  
   @media (max-width: 412px) {
     padding-right:170px;
     padding-left:106px;
@@ -155,6 +162,7 @@ const Span = styled.p`
   @media (max-width: 600px) {
     /* Cambiar a una sola columna en dispositivos más pequeños */
     width: 92%;
+    padding-top: 10px;
   }
 
 `;
@@ -167,6 +175,7 @@ const SectionImagenes = styled.section`
   width: 100%;
   max-width: 100%;
   height: auto;
+
   
 
   @media (max-width: 600px) {
@@ -195,6 +204,14 @@ const SectionVideo = styled.section`
   margin-bottom: 30px;
    
   width: 100%;
+
+  @media screen and (max-width: 600px) {
+
+    margin-top: 0px;
+
+  
+
+}
 `;
 
 const Back = styled.div`

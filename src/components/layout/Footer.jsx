@@ -3,17 +3,22 @@ import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
 const FooterDiv = styled.footer`
-color: white;
- display: flex;
- justify-content: center;
- align-items: flex-end;
- position:relative;
- z-index:30;
- bottom: 0%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  z-index: 99999 ;
+  padding: 10px 0;
+  /* background: rgba(0, 0, 0, 0.98); */ // Optional for better visibility
+  font-size: 14px;
 
 
  @media (max-width: 700px) {
-  bottom: 95px;
+  bottom: 25px;
  
  } 
 

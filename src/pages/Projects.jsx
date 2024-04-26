@@ -13,6 +13,7 @@ const Container = styled.div`
 
   margin-bottom: 100px !important;
   z-index: -1;
+ 
 
   @media only screen and (max-width: 320px){
     margin-top:0px;
@@ -23,6 +24,7 @@ const Container = styled.div`
 const Filter = styled.div`
 color: white;
 margin-bottom: 40px;
+z-index: 999999;
 
 
 ul{
@@ -49,6 +51,7 @@ color: white;
 border: none;
 padding-right: 16px;
 cursor: pointer;
+z-index: 9999999;
 
 text-transform: uppercase;
 font-family: "Syncopate", sans-serif;
@@ -92,7 +95,7 @@ const projects = () => {
       <>
       {isLoading ? <LoaderDeimov/> : (
         <>
-        <h3 className="titleProyects">Selecteddd Projects</h3>
+        <h3 className="titleProyects">Selected Projects</h3>
           
           <Filter className="prueba" >   
           {categories.map(category => (

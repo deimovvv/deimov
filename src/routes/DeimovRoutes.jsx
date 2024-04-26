@@ -17,6 +17,8 @@ import Copy from "../pages/Copy";
 const Content = styled.section`
   flex: 1;
   margin-top: 50px;
+ /*  z-index: 999999; */
+
 `;
 
 const Layout = styled.div`
@@ -24,6 +26,9 @@ const Layout = styled.div`
   flex-direction: column;
   min-height: calc(100% - 5rem);
   position:relative;
+ 
+ 
+ 
   
 
 
@@ -39,6 +44,8 @@ const DeimovRouter = () => {
     setShouldApplyOpacity(hasOpacity);
   }, [location]);
 
+  const isHome = location.pathname === '/';
+
 
   return (
     <> 
@@ -47,7 +54,7 @@ const DeimovRouter = () => {
       <HeaderNav />
       <div className="layoutChild">
         <Layout >
-          <Experience />
+          <Experience isInteractive={isHome}  isHome={isHome}/>
           
           <Content>
             <Routes>
