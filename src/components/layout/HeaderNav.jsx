@@ -5,6 +5,7 @@ import styled from "styled-components";
 const Header = styled.div`
   max-width:100%;
   /* height: 132px; */
+  z-index: 199999;
 
 
   background: transparent;

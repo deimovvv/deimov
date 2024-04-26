@@ -66,7 +66,7 @@ void main() {
     vec3 color3 = vec3(1.244,1.3,1.49);
 
     // Cálculo de ruido
-    float n = noise(vPosition + time * 0.1);
+    float n = noise(vPosition + time * 0.07);
 
       // Genera valores aleatorios basados en la posición y el tiempo
     float randomX = fract(sin(dot(gl_FragCoord.xy, vec2(12.9898, 78.233)) * 43758.5453 + time) * randomFactor);
@@ -86,19 +86,24 @@ void main() {
     n += distanceToMouse * 0.07; // Ajusta el factor según tus preferencias
 
     // Utiliza mousePosition.x para ajustar la velocidad de cambio del patrón de ruido
-    float patternSpeed = mousePosition.x * 0.0001;
+    float patternSpeed = mousePosition.x * .0001;
 
     // Añade el valor de mousePosition.x a 'n' para modificar el patrón de ruido
     n += patternSpeed;
 
     // Aplica efectos de color y patrón
-    vec2 baseUV = rotate(vec2(n * .2), n * 0.2) * vPosition.xy * n;
-    float bPattern = line(baseUV, 0.5);
-    float sPattern = line(baseUV, 0.2) * n * 2.;
+    vec2 baseUV = rotate(vec2(n * .4), n * 2.2) * vPosition.xy * n;
+    float bPattern = line(baseUV, .5);
+    float sPattern = line(baseUV, 0.002) * n * 2.;
+
+ /*    OLD */
+  /*   vec2 baseUV = rotate(vec2(n * .1), n * 5.2) * vPosition.xy * n;
+    float bPattern = line(baseUV, .5);
+    float sPattern = line(baseUV, 0.2) * n * 2.; */
 
     // Calcula los colores finales
     vec3 baseColor = mix(color1, color3, bPattern);
-    vec3 sbaseColor = mix(baseColor, color2, sPattern) * n * 2.0;
+    vec3 sbaseColor = mix(baseColor, color2, sPattern) * n * 1.2;
 
     // Establece el color final del fragmento
     gl_FragColor = vec4(vec3(sbaseColor), 1.0);
