@@ -105,8 +105,10 @@ max-width:100%;
   
     } 
   @media (max-width: 768px) {
-    padding-right:170px;
-    width: 98%;
+   /*  justify-content: flex-end;
+    
+    display: flex; */
+
     padding-top: 5px;
 
   } 
@@ -116,6 +118,12 @@ max-width:100%;
     padding-left:106px;
 
   } 
+  
+  .span1{
+    padding-right: 10px;
+   
+  }
+
   }
 
   span {

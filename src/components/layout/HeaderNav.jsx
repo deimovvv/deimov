@@ -1,11 +1,13 @@
 import React from "react";
 import { Link, useLocation  } from "react-router-dom";
 import styled from "styled-components";
+import '../../css/style.css';
 
 const Header = styled.div`
   max-width:100%;
   /* height: 132px; */
   z-index: 199999;
+/*   font-family: 'Finalnew'; */
 
 
   background: transparent;
@@ -24,11 +26,24 @@ const Header = styled.div`
 
 `;
 
+const DeimovLink = styled(Link)`
+  font-family: 'PersianSwordDemoRegular';
+  color: #ffffff;
+  font-size: 0.85rem;
+
+
+  @media only screen and (max-width: 600px) {
+  font-size: 0.65rem;
+
+  
+  }
+`;
+
 const Wrapper = styled.div`
-padding: 10px 20px;
+padding: 30px 15px;
 display: flex;
 flex: 2 1 auto;
-align-items: flex-end;
+/* align-items: flex-end; */
 
 
 @media only screen and (max-width: 600px) {
@@ -68,7 +83,7 @@ const Li = styled.li`
   font-size: 1rem;
 
   @media (max-width: 700px) {
-    font-size: 14px;
+    font-size: 13.5px;
     padding:20px 0px;
 
    
@@ -88,13 +103,13 @@ const Li = styled.li`
 
 
 const Span = styled.span`
-margin-top: 15px;
+margin-top: 0px;
 color: whitesmoke;
 z-index: 999999;
 
 @media (max-width: 700px) {
   margin-top: 0px;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 `
 
@@ -109,8 +124,9 @@ const HeaderNav = () => {
       <Wrapper>
         <Span>
           {" "}
-          <Link to="/"> /// </Link>{" "}
+          <DeimovLink to="/"> Deimov </DeimovLink>{" "}
         </Span>
+        
         <Nav>
         <Ul>
           <Li>

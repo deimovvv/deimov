@@ -42,7 +42,7 @@ extend({ ImageFadeMaterial })
 const FadingImageDisplacement = () => {
 
   const ref = useRef()
-  const [texture1, texture2, dispTexture] = useTexture(["/textures/1.jpg", "/textures/img.jpg", "/textures/displacement/13.jpg"])
+  const [texture1, texture2, dispTexture] = useTexture(["/textures/1.png", "/textures/1.png", "/textures/displacement/13.jpg"])
   const [hovered, setHover] = useState(false)
   useFrame(() => {
     ref.current.dispFactor = THREE.MathUtils.lerp(ref.current.dispFactor, hovered ? 1 : 0, 0.075)
@@ -50,11 +50,12 @@ const FadingImageDisplacement = () => {
 
   return (
     <mesh onPointerOver={(e) => setHover(true)} onPointerOut={(e) => setHover(false)}  position={[0, 0, 4.3]}>
-      <planeGeometry arg={[1,2]}  />
+      <planeGeometry arg={[1,2]}   />
       <imageFadeMaterial ref={ref} 
       tex={texture1
       } tex2={texture2}
-       disp={dispTexture} toneMapped={false} />
+       disp={dispTexture} toneMapped={false}
+       transparent={true} />
 
 
     </mesh>

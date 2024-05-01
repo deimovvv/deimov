@@ -36,7 +36,17 @@ const FooterDiv = styled.footer`
   .copy{
     .link{
       font-size: 1em;
+  /* font-family: 'PersianSwordDemoRegular'; */
+  font-family: Arial, Helvetica, sans-serif;
+
+
+  @media only screen and (max-width: 600px){
+      font-size: 0.8em;
+  }
+
     }
+
+   
   }
 `
 
@@ -45,7 +55,7 @@ const Footer = () => {
     <FooterDiv> 
         <h2 className="copy">  &copy;  
           {" "}
-          <Link className="link"to="/copy"> 2024 Deimov </Link>{" "}
+          <Link className="link"to="/">{/*  2024 */} Deimov </Link>{" "}
           </h2>
     
 

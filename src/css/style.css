@@ -4,11 +4,20 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'PersianSwordDemoRegular';
+  src: url('/fonts/PersianSwordDemoRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+
+
   overscroll-behavior: none;
 
 
@@ -25,7 +34,7 @@ a{
     text-decoration: none;
     color: rgba(240, 203, 241, 0.904);
     font-size: 1.2rem;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     
 
 }
@@ -76,6 +85,7 @@ margin: 0px auto;
 
 .titleProyects{
   padding-bottom:10px;
+  font-weight: 100;
   @media screen and (max-width: 320px) {
     font-size: 12px;
     }
