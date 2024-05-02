@@ -56,7 +56,7 @@
         'client': 'Deimov',
          'technologies': 'Unreal Engine 5, PCG Framework',
          'category': '3D & Environment',
-         'title': 'Experimentation with Procedural Content Generation',
+         'title': 'Experimentation with PCG',
          'role': 'Freelancer',
          'description': 'Experimentation with Procedural Content Generation',
          'video': 'https://www.youtube.com/watch?v=T0IFN-n-8ps',

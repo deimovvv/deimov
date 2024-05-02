@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Link, useParams,  useNavigate } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import getProjectByid from "../helpers/getProjectByid";
 import styled from "styled-components";
 /* import ReactPlayer from "react-player"; */
@@ -7,22 +7,22 @@ import LoaderDeimov from "../components/layout/LoaderDeimov";
 import { motion } from "framer-motion";
 import YouTube from "react-youtube";
 
-
 const SectionMain = styled.div`
-max-width:100%;
+  max-width: 100%;
   margin: 0 auto; /* Centra el contenido horizontalmente */
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra el contenido verticalmente */
 
-
+  @media (max-width: 700px) {
+    overflow-x: hidden;
+  }
 `;
 
 const Section = styled.section`
-
-width: 100%; /* Ancho máximo del contenedor */
-padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
-position: relative;
+  width: 100%; /* Ancho máximo del contenedor */
+  padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -33,34 +33,30 @@ position: relative;
 
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
-  } 
-
+  }
 `;
 
 const IMGContainer = styled.div`
-
-display:flex;
-flex-direction:column;
+  display: flex;
+  flex-direction: column;
 `;
 
 const IMG = styled.img`
-max-width: 100%;
+  max-width: 100%;
   height: 500px;
   padding-bottom: 5px;
   transition: 0.5s;
-  
+
   :hover {
     transform: scale(1.02);
   }
 
-  @media screen and (max-width: 430px){
-    max-width: 92.5%;
+  @media screen and (max-width: 430px) {
+ 
 
     width: 400px;
-  height: 430px;
-
+    height: 430px;
   }
- 
 `;
 
 const SectionDescription = styled.div`
@@ -68,8 +64,16 @@ display:grid;
 gap:10px;
 max-width:100%;
 @media (max-width: 768px) {
-  
+ 
 } 
+
+.projectDescription{
+
+  @media (max-width: 768px) {
+    width: 90%;
+} 
+
+}
  
 
 
@@ -85,10 +89,11 @@ max-width:100%;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
+  
 
     @media (max-width: 600px) {
       padding-top: 10px;
-  
+     
 } 
    
 
@@ -105,22 +110,30 @@ max-width:100%;
   
     } 
   @media (max-width: 768px) {
-   /*  justify-content: flex-end;
     
-    display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     padding-top: 5px;
+   
 
   } 
   
-  @media (max-width: 412px) {
-    padding-right:170px;
-    padding-left:106px;
+
+  
+  .client{
+
+    @media (max-width: 768px) {
+      display: flex;
+    
+
 
   } 
+  .date{
   
-  .span1{
-    padding-right: 10px;
+
+  
+  } 
    
   }
 
@@ -129,6 +142,9 @@ max-width:100%;
   span {
     font-weight: 250;
     color: #c2c2c2; 
+   
+
+  } 
   }
 
   h3 {
@@ -153,13 +169,11 @@ const H2 = styled.h2`
 `;
 
 const HR = styled.hr`
-
-@media (max-width: 600px) {
+  @media (max-width: 600px) {
     /* Cambiar a una sola columna en dispositivos más pequeños */
     display: none;
   }
-
-`
+`;
 
 const Span = styled.p`
   color: whitesmoke;
@@ -169,10 +183,9 @@ const Span = styled.p`
 
   @media (max-width: 600px) {
     /* Cambiar a una sola columna en dispositivos más pequeños */
-    width: 92%;
+    width: 90%;
     padding-top: 10px;
   }
-
 `;
 
 const SectionImagenes = styled.section`
@@ -183,8 +196,6 @@ const SectionImagenes = styled.section`
   width: 100%;
   max-width: 100%;
   height: auto;
-
-  
 
   @media (max-width: 600px) {
     /* Cambiar a una sola columna en dispositivos más pequeños */
@@ -201,96 +212,71 @@ const IMG2 = styled.img`
   @media (max-width: 600px) {
     /* Cambiar a una sola columna en dispositivos más pequeños */
     width: 400px;
-  height: 330px;
+    height: 330px;
   }
-
-
 `;
 
 const SectionVideo = styled.section`
   margin-top: 80px;
   margin-bottom: 30px;
-   
+
   width: 100%;
 
   @media screen and (max-width: 600px) {
-
     margin-top: 0px;
-
-  
-
-}
+  }
 `;
 
 const Back = styled.div`
-display:flex;
-justify-content:flex-end;
-align-items:flex-end;
-flex-direction:column;
-margin-top: 20px;
-cursor: pointer;
-
-@media screen and (max-width: 30em) {
-
-justify-content:center;
-align-items: center;
-  
-
-}
-
-
-.flecha{
   display: flex;
-  justify-items:flex-end;
-  align-self: flex-end;
-  margin-top: 5px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 20px;
+  cursor: pointer;
 
+  @media screen and (max-width: 30em) {
+    justify-content: center;
+    align-items: center;
+  }
 
-}
-
-
-`
+  .flecha {
+    display: flex;
+    justify-items: flex-end;
+    align-self: flex-end;
+    margin-top: 5px;
+  }
+`;
 
 const ButtonBack = styled.button`
-font-family: "Syncopate", sans-serif;
-display:flex;
-justify-content:flex-end;
-background-color: transparent;
-border: none;
-color: whitesmoke;
-cursor: pointer;
-margin-top: 10px;
-font-size: 15px;
+  font-family: "Syncopate", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 15px;
 
+  :hover {
+    color: #cfcdcd;
+  }
 
-:hover{
-color: #cfcdcd;
-
-}
-
-@media screen and (max-width:320px) {
-margin-top: 12px;
-  left: 87%;
-  font-size: 14px;
-
-}
-
-
-`
+  @media screen and (max-width: 320px) {
+    margin-top: 12px;
+    left: 87%;
+    font-size: 14px;
+  }
+`;
 
 const ProjectsDetail = () => {
   const { id } = useParams();
 
-
-
- 
   const navigate = useNavigate();
 
   /* const project = getProjectByid(id); */
-  const project = useMemo( () => getProjectByid( id ), [ id ]); 
-
- 
-
+  const project = useMemo(() => getProjectByid(id), [id]);
 
   const handleBack = () => {
     navigate(-1); // Navega hacia atrás
@@ -302,7 +288,6 @@ const ProjectsDetail = () => {
     setTimeout(() => setIsLoading(false), 1000); // Simula el tiempo de carga de la página
   });
 
-
   if (!project || Object.keys(project).length === 0) {
     // Opción 1: Redirigir
     // navigate('/some/path');
@@ -311,95 +296,96 @@ const ProjectsDetail = () => {
     return <div>Project not found</div>;
   }
 
-
-
   return (
-    <> 
-    {isLoading ? (<LoaderDeimov/>) : (
-     <motion.div
-     initial={{ y: 200, opacity: 0 }}
-     animate={{ y: 0, opacity: 1 }}
-     transition={{ delay: 0, ease: "circOut", duration: 0.8 }}
-   ><SectionMain>
-      <Section id="project-section">
-        <IMGContainer>
-          <IMG src={`/assets/${project.id}.jpg`} />
-        </IMGContainer>
+    <>
+      {isLoading ? (
+        <LoaderDeimov />
+      ) : (
+        <motion.div
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0, ease: "circOut", duration: 0.8 }}
+        >
+          <SectionMain>
+            <Section id="project-section">
+              <IMGContainer>
+                <IMG src={`/assets/${project.id}.jpg`} />
+              </IMGContainer>
 
-        <SectionDescription> 
-          <H2>//</H2>
-          <HR />
-          <Span>{project.description}</Span>
-          <br />
-          <h3 > {project.projectDescription} </h3>
+              <SectionDescription>
+                <H2>//</H2>
+                <HR />
+                <Span>{project.description}</Span>
+                <br />
+                <h3 className="projectDescription">
+                  {" "}
+                  {project.projectDescription}{" "}
+                </h3>
 
-          {project.url ? (
-            <Link target="_blank" className="link" to={project.url}>
-              {" "}
-              Website{" "}
-            </Link>
-          ) : null}
+                {project.url ? (
+                  <Link target="_blank" className="link" to={project.url}>
+                    {" "}
+                    Website{" "}
+                  </Link>
+                ) : null}
 
-          <div className="dataProject">
-            <span>
-              Technologies: <h3>{project.technologies}</h3>
-            </span>
-          </div>
+                <div className="dataProject">
+                  <span>
+                    Technologies: <h3>{project.technologies}</h3>
+                  </span>
+                </div>
 
-          <div className="dataProject1">
-            <span className="span1">
-              Client: <h3>{project.client}</h3>
-            </span>
-            <span className="span2">
-              Date: <h3>{project.date}</h3>{" "}
-            </span>
-          </div>
-        </SectionDescription>
-      </Section>
+                <div className="dataProject1">
+                  <p className="client">
+                    Client: {project.client}
+                  </p>
+                  <p className="date">
+                    Date: {project.date}
+                  </p>
+                </div>
+              </SectionDescription>
+            </Section>
 
-      {project.image && project.image2 ? (
-        <SectionImagenes>
-          <IMG2 src={project.image} />
-          <IMG2 src={project.image2} />
-        </SectionImagenes>
-      ) : null}
+            {project.image && project.image2 ? (
+              <SectionImagenes>
+                <IMG2 src={project.image} />
+                <IMG2 src={project.image2} />
+              </SectionImagenes>
+            ) : null}
 
-{project.image3 && project.image4 ? (
-        <SectionImagenes>
-          <IMG2 src={project.image3} />
-          <IMG2 src={project.image4} />
-        </SectionImagenes>
-      ) : null}
+            {project.image3 && project.image4 ? (
+              <SectionImagenes>
+                <IMG2 src={project.image3} />
+                <IMG2 src={project.image4} />
+              </SectionImagenes>
+            ) : null}
 
-      {project.video ? (
-        <SectionVideo>
-          <YouTube
-            className="video"
-      videoId={project.youtubeID} // El ID del video de YouTube que deseas reproducir
-      opts={{ 
-        width: "100%", // Ancho del reproductor de video
-        height: "500px" // Altura del reproductor de video
-      }}
-    />
-            <Back onClick={handleBack}>
-           
-           <box-icon
-             className="flecha"
-             animation="flashing"
-             name="left-arrow-alt"
-             flip="vertical"
-             color="#ffffff"
-           ></box-icon>
+            {project.video ? (
+              <SectionVideo>
+                <YouTube
+                  className="video"
+                  videoId={project.youtubeID} // El ID del video de YouTube que deseas reproducir
+                  opts={{
+                    width: "100%", // Ancho del reproductor de video
+                    height: "500px", // Altura del reproductor de video
+                  }}
+                />
+                <Back onClick={handleBack}>
+                  <box-icon
+                    className="flecha"
+                    animation="flashing"
+                    name="left-arrow-alt"
+                    flip="vertical"
+                    color="#ffffff"
+                  ></box-icon>
 
-            <ButtonBack > BACK </ButtonBack>
-
-           </Back>
-        </SectionVideo>
-      ) : null}
-    </SectionMain>
-    </motion.div>
-    )}
-    
+                  <ButtonBack> BACK </ButtonBack>
+                </Back>
+              </SectionVideo>
+            ) : null}
+          </SectionMain>
+        </motion.div>
+      )}
     </>
   );
 };

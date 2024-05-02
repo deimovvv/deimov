@@ -71,7 +71,7 @@ const home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 1000); // Simula el tiempo de carga de la página
+    setTimeout(() => setIsLoading(false), 2000); // Simula el tiempo de carga de la página
   }, []);
 
 

@@ -27,13 +27,13 @@ const Header = styled.div`
 `;
 
 const DeimovLink = styled(Link)`
-  font-family: 'PersianSwordDemoRegular';
+  font-family: 'Cinzel-VariableFont_wght';
   color: #ffffff;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
 
 
   @media only screen and (max-width: 600px) {
-  font-size: 0.65rem;
+  font-size: 0.92rem;
 
   
   }
@@ -83,7 +83,7 @@ const Li = styled.li`
   font-size: 1rem;
 
   @media (max-width: 700px) {
-    font-size: 13.5px;
+    font-size: 12.5px;
     padding:20px 0px;
 
    

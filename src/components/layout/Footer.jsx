@@ -36,8 +36,8 @@ const FooterDiv = styled.footer`
   .copy{
     .link{
       font-size: 1em;
-  /* font-family: 'PersianSwordDemoRegular'; */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Cinzel-VariableFont_wght';
+/*   font-family: Arial, Helvetica, sans-serif; */
 
 
   @media only screen and (max-width: 600px){

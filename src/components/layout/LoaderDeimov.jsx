@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import PuffLoader from "react-spinners/ClipLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 
 const Div = styled.div`
 position: fixed; /* Se posiciona fijo en la ventana */
