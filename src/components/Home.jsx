@@ -7,6 +7,14 @@ import PageWithAudio from "./PageAudio";
 import HeaderNav from "./layout/HeaderNav";
 
 
+
+const PageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  // Esto asegura que el footer se quede abajo
+`;
+
+
 const Container = styled.div`
 display: flex;
 justify-content: center;
@@ -76,7 +84,8 @@ const home = () => {
 
 
   return (
-    <>{ isLoading ?  <LoaderDeimov /> : (
+    <PageContainer>
+      { isLoading ?  <LoaderDeimov /> : (
       <motion.div
       initial={{ y: 200, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -98,7 +107,7 @@ const home = () => {
  {/*  <PageWithAudio/> */}
  
 
-    </>
+    </PageContainer>
   );
 };
 
