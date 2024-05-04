@@ -84,7 +84,7 @@ const home = () => {
 
 
   return (
-    <PageContainer>
+    <>
       { isLoading ?  <LoaderDeimov /> : (
       <motion.div
       initial={{ y: 200, opacity: 0 }}
@@ -95,9 +95,11 @@ const home = () => {
    
       <Container>
         <TitleContainer>
-      <Title></Title>
+      <Title>lsks</Title>
     </TitleContainer>  
-   
+        
+
+      
     </Container>
     </motion.div>
     )}
@@ -107,7 +109,7 @@ const home = () => {
  {/*  <PageWithAudio/> */}
  
 
-    </PageContainer>
+    </>
   );
 };
 
