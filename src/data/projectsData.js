@@ -97,6 +97,37 @@
          
 
     },
+    {
+        'id': 'kinectdali',
+        'name': 'Interactive Kinect',
+         'date': '2023',
+         'client': 'Realidad 360',
+         'technologies': 'Touch designer, Photoshop',
+         'category': 'Media & Interactive',
+         'title': 'Kinect & Touch Designer',
+         'role': 'Freelancer',
+         'description': 'Experiment with Kinect & Touch Designer',
+         'video': 'https://www.youtube.com/watch?v=iHV8JBfzrTg',
+         'youtubeID': 'eGZCvsMPaqE'
+         
+
+    },
+    {
+        'id': 'tgn',
+        'name': 'Interactive Kinect',
+         'date': '2023',
+         'client': 'Realidad 360',
+         'technologies': 'Touch designer, Photoshop',
+         'category': 'Media & Interactive',
+         'title': 'Kinect & Touch Designer',
+         'role': 'Freelancer',
+         'description': 'Experience made with kinect camera and touch designer for tgn, service provided from Realidad 360.',
+         'video': 'https://www.youtube.com/watch?v=iHV8JBfzrTg',
+         'youtubeID': 'eGZCvsMPaqE'
+         
+
+    },
+
 
     
 

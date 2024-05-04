@@ -84,10 +84,11 @@ const MusicCard = ({ id, name, soundcloud, sello, spotify, youtube }) => {
         <Link to={soundcloud} target="_blank">
           <img src="/icons8-soundcloud-24.png" />
         </Link>
-        <Link to={spotify} target="_blank">
+        {spotify ? <Link to={spotify} target="_blank">
           {" "}
           <img src="/icons8-spotify-24.png" />{" "}
-        </Link>
+        </Link> : ''}
+        
         <Link to={youtube} target="_blank">
           {" "}
           <img src="/icons8-youtube-play-24.png" />{" "}

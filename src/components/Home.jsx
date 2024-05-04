@@ -95,7 +95,7 @@ const home = () => {
    
       <Container>
         <TitleContainer>
-      <Title>lsks</Title>
+      <Title></Title>
     </TitleContainer>  
         
 
@@ -104,8 +104,8 @@ const home = () => {
     </motion.div>
     )}
 
-{/* 
-  <Footer/> */}
+
+  <Footer/>
  {/*  <PageWithAudio/> */}
  
 

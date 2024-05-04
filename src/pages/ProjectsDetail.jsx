@@ -221,6 +221,7 @@ const SectionVideo = styled.section`
   margin-bottom: 30px;
 
   width: 100%;
+text-align: center;
 
   @media screen and (max-width: 600px) {
     margin-top: 0px;
@@ -366,7 +367,7 @@ const ProjectsDetail = () => {
                   className="video"
                   videoId={project.youtubeID} // El ID del video de YouTube que deseas reproducir
                   opts={{
-                    width: "100%", // Ancho del reproductor de video
+                    width: "90%", // Ancho del reproductor de video
                     height: "500px", // Altura del reproductor de video
                   }}
                 />
