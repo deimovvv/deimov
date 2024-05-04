@@ -102,8 +102,8 @@ const home = () => {
     </motion.div>
     )}
 
-
-  <Footer/>
+{/* 
+  <Footer/> */}
  {/*  <PageWithAudio/> */}
  
 
