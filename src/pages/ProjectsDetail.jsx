@@ -194,8 +194,9 @@ const SectionImagenes = styled.section`
   align-items: center; */
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+
 
   @media (max-width: 600px) {
     /* Cambiar a una sola columna en dispositivos más pequeños */

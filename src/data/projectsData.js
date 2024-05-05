@@ -3,6 +3,22 @@
  
  const projectsData = [
     {
+        'id': 'manglar',
+        'name': 'Virtual Reality',
+        'date': '2024',
+        'client': 'Manglar',
+         'technologies': 'Unreal Engine 5',
+         'category': 'VR',
+         'title': 'Virtual Reality Experience',
+         'role': 'Company',
+         'description': 'Virtual Reality experience for electronic music event',
+         'video': 'https://www.youtube.com/watch?v=pUe8FA5ncso',
+         'image': '/assets/manglar1.jpg',
+         'image2': '/assets/manglar2.jpg',
+         'youtubeID': 'SM1aSXdxxgo'
+
+    },
+    {
         'id': '999_2',
         'name': 'Virtual Reality',
         'date': '2024',
@@ -13,6 +29,8 @@
          'role': 'Freelancer',
          'description': `Virtual Reality Experience we made for party.`,
          'video': 'https://www.youtube.com/watch?v=f3XfhRqPN7I',
+         'image': '/assets/999_2.jpg',
+         'image2': '/assets/999_3.jpg',
          'youtubeID': 'f3XfhRqPN7I'
     },
     {
@@ -33,6 +51,8 @@
          
          
     },
+ 
+
     
     {
         'id': 'coevoweb',
@@ -64,6 +84,23 @@
 
 
     },
+    {
+        'id': 'envtren1',
+        'name': 'Environment Tren inspired by Magnet VFXs tutorial',
+        'date': '2024',
+        'client': 'Personal',
+         'technologies': 'Unreal Engine 5',
+         'category': '3D & Environment',
+         'title': 'Environment',
+         'role': 'Company',
+         'description': 'Environment Tren inspired by Magnet VFXs tutorial',
+         'video': 'https://www.youtube.com/watch?v=pUe8FA5ncso',
+         'image': '/assets/envtren.jpg',
+         'image2': '/assets/envtren3.jpg',
+         'youtubeID': 'OreMUiKiSH4'
+
+    },
+   
 
     {
         'id': 'RoterVR',
@@ -123,7 +160,7 @@
          'role': 'Freelancer',
          'description': 'Experience made with kinect camera and Touch Designer for TGN, service provided from Realidad 360.',
          'video': 'https://www.youtube.com/watch?v=iHV8JBfzrTg',
-         'youtubeID': 'eGZCvsMPaqE'
+         'youtubeID': 'Gde5ckzKT54'
          
 
     },
