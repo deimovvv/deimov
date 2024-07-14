@@ -80,7 +80,7 @@ const projects = () => {
 
 
    // Tu lista de categorías
-   const categories = ['All', 'Web', 'VR', '3D & Environment', 'Media & Interactive'];
+   const categories = ['All', 'Web', 'VR', '3D & Environment', 'Media & Interactive', 'AI'];
 
    const [isLoading, setIsLoading] = useState(true);
 

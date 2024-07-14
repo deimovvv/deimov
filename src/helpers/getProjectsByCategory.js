@@ -6,7 +6,7 @@ export const getProjectByCategory = (category) => {
         return projectsData; // Mostrar todos los proyectos sin filtro
       }
 
-    const validCategory = ['All', 'Web', 'VR', '3D & Environment', 'Media & Interactive']
+    const validCategory = ['All', 'Web', 'VR', '3D & Environment', 'Media & Interactive', 'AI']
 
     if(!validCategory.includes( category )){
         throw new Error(`${category} is not valid category `)

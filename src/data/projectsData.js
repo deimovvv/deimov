@@ -29,13 +29,13 @@
          'role': 'Freelancer',
          'description': `Virtual Reality Experience we made for party.`,
          'video': 'https://www.youtube.com/watch?v=f3XfhRqPN7I',
-         'image': '/assets/999_2.jpg',
+         'image': '/assets/999_22.jpg',
          'image2': '/assets/999_3.jpg',
          'youtubeID': 'f3XfhRqPN7I'
     },
     {
         'id': 'evolvara',
-        'name': 'Virtual Reality',
+        'name': 'Environment',
         'date': '2023',
         'client': 'Coevo',
          'technologies': 'Unreal Engine 5.2, Adobe Premiere',
@@ -51,6 +51,28 @@
          
          
     },
+
+    {
+        'id': 'forestTrain',
+        'name': 'Environment',
+        'date': '2024',
+        'client': 'Coevo',
+         'technologies': 'Unreal Engine 5.3, SpeedTree',
+         'category': '3D & Environment',
+         'title': 'Environment & Character',
+         'role': 'Freelancer',
+         'description': `Environment Art inspired in Michael Gerard's Course
+         `,
+         'projectDescription': 'I used SpeedTree, Unreal Engine and Customs shaders(Vegetation and Landscape)',
+         'video': 'https://www.youtube.com/watch?v=Dt0Ucp6wbUk',
+         'image': '/assets/forestTrain2.jpg',
+         'image2': '/assets/forestTrain3.jpg',
+         'youtubeID': 'IWbyb_4up5I',
+         
+         
+    },
+ 
+
  
 
     
@@ -70,6 +92,25 @@
          
     },
     {
+        'id': 'DeimovFOG_00',
+        'name': '',
+        'date': '2023',
+        'client': 'Deimov',
+         'technologies': 'Unreal Engine, Speed Tree',
+         'category': '3D & Environment',
+         'title': 'Deimov FOG',
+         'role': 'Freelancer',
+         'description': 'Experiment with Unreal Engine + SpeedTree',
+         'video': 'https://www.youtube.com/watch?v=T0IFN-n-8ps',
+         'image': '/assets/DeimovFOG_01.jpg',
+         'image2': '/assets/DeimovFOG_02.jpg',
+         'youtubeID': 'S02d0qddMZ4'
+
+
+    },
+    
+    
+    {
         'id': 'pcg',
         'name': 'Procedural Content Generation',
         'date': '2023',
@@ -84,6 +125,7 @@
 
 
     },
+   
     {
         'id': 'envtren1',
         'name': 'Environment Tren inspired by Magnet VFXs tutorial',
@@ -100,6 +142,60 @@
          'youtubeID': 'OreMUiKiSH4'
 
     },
+    {
+        'id': 'AI-A',
+        'name': 'NO HUMAN',
+        'date': '2024',
+        'client': 'Personal', 
+         'technologies': 'Stable Diffusion',
+         'category': 'AI',
+         'title': 'Deimov ART WORK',
+         'role': 'Company',
+         'description': 'Artwork for Deimov EP',
+         'youtubeID': 'OreMUiKiSH4'
+
+    },
+    {
+        'id': 'AI-Morfica',
+        'name': 'NO HUMAN',
+        'date': '2024',
+        'client': 'Personal',
+         'technologies': 'Stable Diffusion',
+         'category': 'AI',
+         'title': 'Deimov Set - Morfico',
+         'role': 'Company',
+         'description': 'Artwork for Deimov Set',
+         'youtubeID': 'OreMUiKiSH4'
+
+    },
+    {
+        'id': 'AI-nohuman',
+        'name': 'NO HUMAN',
+        'date': '2024',
+        'client': 'Personal',
+         'technologies': 'Stable Diffusion',
+         'category': 'AI',
+         'title': 'NO HUMAN',
+         'role': 'Company',
+         'description': 'NO HUMAN (microcosm)',
+         'youtubeID': 'OreMUiKiSH4'
+
+    },
+    {
+        'id': 'AI-glue',
+        'name': 'Inspired in bubbles',
+        'date': '2024',
+        'client': 'Personal',
+         'technologies': 'Stable Diffusion',
+         'category': 'AI',
+         'title': 'BUBBLES',
+         'role': 'Company',
+         'description': 'Inspired in bubbles',
+         'youtubeID': 'OreMUiKiSH4'
+
+    },
+   
+   
    
 
     {
@@ -131,6 +227,23 @@
          'description': 'Realistic Environment using Megascans assets',
          'video': 'https://www.youtube.com/watch?v=iHV8JBfzrTg',
          'youtubeID': 'iHV8JBfzrTg'
+         
+
+    },
+    {
+        'id': 'touch-1',
+        'name': 'Media',
+         'date': '2023',
+         'client': 'Personal',
+         'technologies': 'Touch designer',
+         'category': 'Media & Interactive',
+         'title': 'Generative ART',
+         'role': 'Freelancer',
+         'description': 'Experiment with Touch Designer',
+         'image': '/assets/touch-2.jpg',
+         'image2': '/assets/touch-3.jpg',
+         'video': 'https://www.youtube.com/watch?v=iHV8JBfzrTg',
+         'youtubeID': '6Di4a4IiCuA',
          
 
     },
