@@ -108,6 +108,23 @@
 
 
     },
+    {
+        'id': 'Aitana',
+        'name': '',
+        'date': '2023',
+        'client': 'Julia Conde & Aitana',
+         'technologies': 'Unreal Engine, Blender',
+         'category': '3D & Environment',
+         'title': 'Aitana 3D',
+         'role': 'Freelancer',
+         'description': '3D art for aitana video clip directed by Julia conde',
+         'video': 'https://www.youtube.com/watch?v=sB3OVYG7tTQ',
+         'image': '/assets/Aitana2.jpg',
+         'image2': '/assets/Aitana3.jpg',
+         'youtubeID': 'sB3OVYG7tTQ'
+
+
+    },
     
     
     {

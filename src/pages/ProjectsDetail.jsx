@@ -8,33 +8,32 @@ import { motion } from "framer-motion";
 import YouTube from "react-youtube";
 
 const SectionMain = styled.div`
-  max-width: 100%;
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo */
   margin: 0 auto; /* Centra el contenido horizontalmente */
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra el contenido verticalmente */
-
-  @media (max-width: 700px) {
-    overflow-x: hidden;
-  }
+  padding: 20px; /* Espacio alrededor */
 `;
 
 const Section = styled.section`
-  width: 100%; /* Ancho máximo del contenedor */
-  padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 0px;
+  grid-gap: 20px; /* Añadimos espacio entre columnas */
   padding-bottom: 50px;
-  align-items: center; /* Alinea los elementos verticalmente */
-  justify-items: start; /* Alinea los elementos horizontalmente */
+  align-items: center;
+  justify-items: center;
   overflow-y: hidden;
 
+  /* Pantallas más pequeñas */
   @media (max-width: 700px) {
-    grid-template-columns: 1fr;
- 
-
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    text-align: center; /* Centra el texto */
   }
 `;
 
@@ -74,7 +73,7 @@ const IMG = styled.img`
 const SectionDescription = styled.div`
 display:grid;
 gap:10px;
-max-width:100%;
+max-width: auto;
 @media (max-width: 768px) {
  
 } 

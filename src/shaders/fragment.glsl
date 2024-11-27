@@ -56,10 +56,10 @@ vec2 rotate(vec2 v, float a) {
 
 void main() {
     // Definición de colores
-/*     vec3 color1 = vec3(0.6, 0.3, 0.54);
+  /*   vec3 color1 = vec3(0.6, 0.3, 0.54);
     vec3 color2 = vec3(0.01, 0.1, 0.1);
-    vec3 color3 = vec3(0.244, 0.3, 0.4); */
-
+    vec3 color3 = vec3(0.244, 0.3, 0.4);
+ */
   
      
 
@@ -94,7 +94,7 @@ void main() {
     n += patternSpeed;
 
     // Aplica efectos de color y patrón
-    vec2 baseUV = rotate(vec2(n * .03), n * 5.2) * vPosition.xy * n;
+    vec2 baseUV = rotate(vec2(n * 0.03), n * 5.2) * vPosition.xy * n;
     float bPattern = line(baseUV, .5);
     float sPattern = line(baseUV, 0.2) * n * 2.;
 

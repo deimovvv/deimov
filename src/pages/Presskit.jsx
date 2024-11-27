@@ -3,50 +3,66 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container1 = styled.section`
-display: grid;
-grid-template-columns: 600px 1fr;
-justify-items: center;
-gap: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+  text-align: center;
 `
 
 const Text1 = styled.p`
-width: 80%;
+width: 85%;
 text-align: center;
-padding-top: 150px;
+padding-top: 50px;
 `
 const Img1 = styled.img`
-width: 70%;
+width: 650px;
+
 
 `
 
 
 const Container2 = styled.section`
 display: grid;
-grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+  text-align: center;
 `;
 
 
 const Text2 = styled.p`
-width: 80%;
+width: 85%;
 text-align: center;
-padding-top: 150px;
+
+padding-left: 80px;
+
 `
 const Img2 = styled.img`
-width: 70%;
+width: 540px;
+height: 530px;
+padding-left: 140px;
+
 
 `
 
 const Container3 = styled.section`
-display: grid;
-grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 150px;
+  gap: 20px;
 `;
 
-
 const Text3 = styled.p`
-width: 80%;
-text-align: center;
-padding-top: 150px;
-`
+  max-width: 80%;
+  text-align: center;
+`;
 const Img3 = styled.img`
 width: 1200px;
 height: 500px;
@@ -57,9 +73,10 @@ const Presskit = () => {
   return (
     <> 
     <Container1>
-    <Img1 src="/public/assets/DeimovAI_WEB.jpg" alt="" />
+    <Img1 src="/public/assets/gonioyokaii.jpg" alt="" />
       <Text1>
         {" "}
+        <h1>DJ & PRODUCER</h1>
         Deimov is an Interdisciplinary Artist Co-Founder of {" "}
         <Link target="_blank" className="link" to="https://coevo-studio.com/"> COEVO </Link><br/><br/>
         who channels his passion for music and technology into avant-garde
@@ -68,20 +85,22 @@ const Presskit = () => {
         powerful rhythm of techno, which gives his creations an innovative and
         original character. In his tireless search to expand dimensions.
          <br/><br/>
-         Deimov
-        has explored the intersection between sound art and virtual reality, his
-        vision being to take the public to immerse themselves in parallel
-        universes where music and technology converge in a unique and authentic
-        experience.
+        
       </Text1>
+
+     
      
     </Container1>
 
       <Container2>
   
-      <Text2>Technical Rider</Text2>
-      <Img2 src="/public/assets/DeimovAI_WEB.jpg" alt="" />
-
+      <Text2> Deimov
+        has explored the intersection between sound art and virtual reality, his
+        vision being to take the public to immerse themselves in parallel
+        universes where music and technology converge in a unique and authentic
+        experience.</Text2>
+      <Img2 src="/public/assets/deimov-insecto.jpg" alt="" />
+      
       </Container2>
 
       <Container3>

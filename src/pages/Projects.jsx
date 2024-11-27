@@ -4,21 +4,22 @@ import styled from "styled-components";
 import LoaderDeimov from "../components/layout/LoaderDeimov";
 
 const Container = styled.div`
+  margin: 50px auto; /* Centra el contenido horizontalmente */
+  max-width: 1200px; /* Ancho máximo para pantallas grandes */
+  padding: 0 20px; /* Espaciado interno para pantallas más pequeñas */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido verticalmente */
+  gap: 20px; /* Espacio entre elementos */
 
-
-
-
-  margin-top: 50px;
-  align-items: center;
-
-  margin-bottom: 100px !important;
-  z-index: -1;
- 
-
-  @media only screen and (max-width: 320px){
-    margin-top:0px;
+  @media (min-width: 1200px) {
+    padding: 0; /* Remueve el padding en pantallas grandes */
   }
 
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    padding: 0 10px; /* Aumenta el padding en pantallas pequeñas */
+  }
 `;
 
 const Filter = styled.div`
